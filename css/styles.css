@@ -9,12 +9,40 @@
 }
 .bannerNosotros {
 	background: url('../img/marcas/bannerMarcas.png');
-	background-size: 100% 100%;
-	background-position: top center;
+	background-size: cover;
+	background-position: bottom center;
 	background-repeat: no-repeat;
 	max-width: calc(100% - 190px);
 	width: 100%;
-	height: 450px;
+	height: 480px;
+}
+.bannerContacto {
+	background: url('../img/contacto/bannerContactos.png');
+	background-size: cover;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	max-width: calc(100% - 190px);
+	width: 100%;
+	height: 480px;
+}
+.bannerResponsabilidad {
+	background: url('../img/responsabilidad/bannerResponsabilidad.png');
+	background-size: cover;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	max-width: calc(100% - 190px);
+	width: 100%;
+	height: 480px;
+}
+
+.bannerLegal {
+	background: url('../img/legal/bannerLegal.png');
+	background-size: cover;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	max-width: calc(100% - 190px);
+	width: 100%;
+	height: 480px;
 }
 
 .degradadoBannerNosotros {
@@ -31,7 +59,22 @@
 	line-height: 70px;
 	letter-spacing: -3px;
 }
+.titulo-h2 {
+	color: #272727;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 45px; /* 112.5% */
+	letter-spacing: -2px;
+}
 
+.titulo-h3 {
+	color: #000;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 25px;
+}
 .descripcion-v1 {
 	color: #000;
 	font-size: 16px;
@@ -47,4 +90,175 @@
 	font-weight: 400;
 	line-height: 18px;
 	opacity: 0.5;
+}
+
+.buttonCala {
+	display: flex;
+	white-space: nowrap;
+	height: 50px;
+	padding: 9px 28px;
+	align-items: center;
+	justify-items: center;
+	color: white;
+	border-radius: 40px;
+	border: 1px solid #1b58cd;
+	background: #1b58cd;
+}
+
+/*Desactivar efecto border*/
+button:active {
+	outline: none !important; /* Elimina el borde del foco */
+}
+
+/*checkbox*/
+
+.checkbox-wrapper-65 .cbx {
+	position: relative;
+	display: block;
+	float: left;
+	width: 20px;
+	height: 20px;
+	min-width: 20px;
+	border-radius: 4px;
+	border: 1px solid #c2c2c2;
+	background-color: transparent;
+	/* background-image: linear-gradient(#0f698d, #1d3c6b); */
+	box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.15),
+		inset 0 -1px 1px rgba(0, 0, 0, 0.15);
+	transition: all 0.15s ease;
+}
+
+.checkbox-wrapper-65 .cbx svg {
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	fill: none;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke: #fff;
+	stroke-width: 2;
+	stroke-dasharray: 17;
+	stroke-dashoffset: 17;
+	transform: translate3d(0, 0, 0);
+}
+
+.checkbox-wrapper-65 .cbx + span {
+	float: left;
+	margin-left: 6px;
+}
+
+.checkbox-wrapper-65 {
+	user-select: none;
+}
+
+.checkbox-wrapper-65 label {
+	display: inline-block;
+	cursor: pointer;
+}
+
+.checkbox-wrapper-65 input[type='checkbox'] {
+	display: none;
+	visibility: hidden;
+}
+
+.checkbox-wrapper-65 input[type='checkbox']:checked + .cbx {
+	background-color: #606062;
+	background-image: linear-gradient(#2584d2, #1d52c1);
+}
+
+.checkbox-wrapper-65 input[type='checkbox']:checked + .cbx svg {
+	stroke-dashoffset: 0;
+	transition: all 0.15s ease;
+}
+
+/* Botón inactivo */
+.tab-button {
+	background-color: transparent;
+	color: rgba(55, 65, 81, 0.5);
+	border: none;
+	border-radius: 9999px;
+	transition: all 0.3s ease;
+}
+
+/* Botón activo */
+.active-tab {
+	background-color: #ffffff; /* Blanco */
+	color: #1b58cd; /* Azul */
+	/* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+/*Noticias*/
+.cardNoticias {
+	max-width: 400px;
+	width: 100%;
+	height: 440px;
+	padding: 20px 20px;
+	border-radius: 20px;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: start;
+	justify-items: start;
+}
+.etiquetaNoticias {
+	width: fit-content;
+	height: 20px;
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	border-radius: 20px;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 20px;
+	letter-spacing: -0.5px;
+	padding: 6px 20px;
+}
+
+@media (max-width: 1024px) {
+	.bannerNosotros,
+	.bannerContacto,
+	.bannerResponsabilidad,
+	.bannerLegal {
+		background-size: cover;
+		max-width: calc(100% - 100px);
+		height: 350px;
+	}
+	.subtitulo {
+		font-size: 60px;
+		letter-spacing: -1px;
+		line-height: 45px;
+	}
+}
+
+@media (max-width: 768px) {
+	.bannerNosotros,
+	.bannerContacto,
+	.bannerResponsabilidad,
+	.bannerLegal {
+		background-size: cover;
+		max-width: calc(100% - 36px);
+		height: 300px;
+	}
+	.subtitulo {
+		font-size: 30px;
+		font-weight: 700;
+		letter-spacing: -1px;
+	}
+	.descripcion-v1 {
+		font-size: 14px;
+	}
+}
+@media (max-width: 450px) {
+	.bannerNosotros,
+	.bannerContacto,
+	.bannerResponsabilidad,
+	.bannerLegal {
+		height: 250px;
+	}
+	.subtitulo {
+		font-size: 30px;
+		font-weight: 700;
+		letter-spacing: -1px;
+	}
 }
