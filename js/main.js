@@ -53,3 +53,85 @@
     attachButtonEvents();   // Asignar eventos de clic a los botones
   });
 })();
+
+
+
+function initCarousels() {
+  // Carrusel Home Banner
+  const homeBanner = document.querySelector('.carouselhistoriaNosotros');
+  if (homeBanner) {
+    new Swiper('.carouselhistoriaNosotros', {
+      slidesPerView: 3,
+      spaceBetween: 50,
+      loop: false,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      // pagination: {
+      //   el: '.swiper-pagination',
+      //   clickable: true,
+      // },
+      navigation: {
+        nextEl: '.custom-next-historia',
+        prevEl: '.custom-prev-historia',
+        disabledClass: 'swiper-button-disabled',
+      },
+      effect: 'slide',
+      centeredSlides: false,
+    });
+  }
+
+  // Carrusel Propiedades destacadas
+  const homePropiedadesDestacadas = document.querySelector('.propiedadesDestacadasSwiper');
+  if (homePropiedadesDestacadas) {
+    new Swiper('.propiedadesDestacadasSwiper', {
+      loop: false,
+      pagination: {
+        el: '.swiper-pagination-home-destacadas',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.custom-next-home-propiedades',
+        prevEl: '.custom-prev-home-propiedades',
+        disabledClass: 'swiper-button-disabled',
+      },
+      effect: 'slide',
+      centeredSlides: false,
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        450: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          allowTouchMove: true,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+          allowTouchMove: false,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+          allowTouchMove: false,
+
+        },
+        1536: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+          allowTouchMove: false,
+        },
+      },
+    });
+  }
+
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Cambia el fondo del header si existe
+  initCarousels()
+
+});
