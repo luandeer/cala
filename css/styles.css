@@ -30,7 +30,6 @@
 	background-size: cover;
 	background-position: top center;
 	background-repeat: no-repeat;
-
 	width: 100%;
 	height: 100vh;
 }
@@ -324,8 +323,8 @@ button:active {
 .custom-swiper-button {
 	/* border: 1px solid #2b3688;  */
 	color: #000; /* Color del icono */
-	width: 50px; /* Ancho del botón */
-	height: 50px; /* Alto del botón */
+	width: 70px; /* Ancho del botón */
+	height: 70px; /* Alto del botón */
 	border-radius: 50%; /* Botón redondo */
 	display: flex;
 	align-items: center;
@@ -494,8 +493,18 @@ button:active {
 	opacity: 0.2;
 	border-radius: 100%;
 }
+@media (max-width: 1280px) {
+	.bannerHome {
+		background-position: right 60% center;
+	}
+}
 
 @media (max-width: 1024px) {
+	.bannerHome {
+		background-position: right 0% center;
+		height: 620px;
+	}
+
 	.bannerNosotros,
 	.bannerContacto,
 	.bannerMarcas,

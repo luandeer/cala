@@ -85,7 +85,7 @@ function initCarousels() {
   const productoshome = document.querySelector('.carouselProductosHome');
   if (productoshome) {
     new Swiper('.carouselProductosHome', {
-      slidesPerView: 1.7,
+
       spaceBetween: 10,
       loop: false,
       autoplay: {
@@ -103,6 +103,26 @@ function initCarousels() {
       },
       effect: 'slide',
       centeredSlides: false,
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        450: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 2.4,
+          spaceBetween: 0,
+        },
+        1024: {
+          slidesPerView: 1.7,
+          spaceBetween: 10,
+
+        },
+
+      },
     });
   }
 
