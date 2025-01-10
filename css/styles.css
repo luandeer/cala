@@ -497,10 +497,16 @@ button:active {
 	.bannerHome {
 		background-position: right 60% center;
 	}
+	.fondoMapa {
+		background-size: cover;
+		background-position: right -250px bottom 50%;
+		max-width: 650px;
+	}
 }
 
 @media (max-width: 1024px) {
 	.bannerHome {
+		background-size: cover;
 		background-position: right 0% center;
 		height: 620px;
 	}
@@ -518,6 +524,17 @@ button:active {
 		font-size: 60px;
 		letter-spacing: -1px;
 		line-height: 45px;
+	}
+	.span-line::before {
+		left: 55%; /* Coloca el círculo al inicio de la línea */
+	}
+	.span-line::after {
+		left: 57%; /* Coloca la línea al lado derecho del círculo */
+	}
+	.fondoMapa {
+		background-size: cover;
+		background-position: right -300px bottom 50%;
+		max-width: 650px;
 	}
 }
 
@@ -539,6 +556,53 @@ button:active {
 	.descripcion-v1 {
 		font-size: 14px;
 	}
+
+	.span-line-mobile {
+		position: relative;
+	}
+	.span-line-mobile::before {
+		content: '';
+		position: absolute;
+		top: 100%; /* Centra el círculo verticalmente */
+		left: 50%; /* Alinea el círculo al centro horizontal */
+		transform: translateX(-50%); /* Ajusta tanto en el eje X como Y */
+		width: 8px; /* Tamaño del círculo */
+		height: 8px; /* Tamaño del círculo */
+		border-radius: 50%; /* Hace que el elemento sea redondo */
+		background-color: #fff; /* Color del círculo */
+	}
+
+	.span-line-mobile::after {
+		content: '';
+		position: absolute;
+		top: 100%; /* Inicia desde el borde superior */
+		left: 50%; /* Coloca la línea en el centro horizontal */
+		transform: translateX(-50%); /* Centra la línea horizontalmente */
+		height: 100%; /* Longitud de la línea vertical */
+		width: 0; /* Sin ancho, porque usamos border */
+		border-left: 0.12rem dashed #fff; /* Línea vertical tipo dashed */
+	}
+	.line-container {
+		display: flex;
+		justify-content: center; /* Centra la línea horizontalmente */
+		align-items: center; /* Centra la línea verticalmente */
+		height: 100%;
+		margin-top: 4px;
+	}
+
+	.vertical-line {
+		border: none; /* Elimina los bordes predeterminados */
+		border-left: 2px dashed #fff; /* Crea una línea vertical */
+		height: 100%; /* Ocupa toda la altura del contenedor */
+		width: 0; /* El ancho es 0, ya que solo usamos border */
+	}
+	.fondoMapa {
+		/* background-size: 200% 100%; */
+		background-position: 0% center;
+		width: 100%;
+		/* background-position: right -500px bottom 50%; */
+		max-width: 100%;
+	}
 }
 @media (max-width: 450px) {
 	.bannerNosotros,
@@ -552,5 +616,13 @@ button:active {
 		font-size: 30px;
 		font-weight: 700;
 		letter-spacing: -1px;
+	}
+	.fondoMapa {
+		/* background-position: right -650px top 100%; */
+		background-size: 250% 100%;
+		background-position: 6% center;
+		width: 100%;
+		/* background-position: right -500px bottom 50%; */
+		max-width: 100%;
 	}
 }

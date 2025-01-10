@@ -61,8 +61,7 @@ function initCarousels() {
   const historiaNosotros = document.querySelector('.carouselhistoriaNosotros');
   if (historiaNosotros) {
     new Swiper('.carouselhistoriaNosotros', {
-      slidesPerView: 3,
-      spaceBetween: 50,
+
       loop: false,
       autoplay: {
         delay: 4000,
@@ -76,6 +75,26 @@ function initCarousels() {
         nextEl: '.custom-next-historia',
         prevEl: '.custom-prev-historia',
         disabledClass: 'swiper-button-disabled',
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1.5,
+          spaceBetween: 10,
+        },
+        450: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 50,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+
+        },
+
       },
       effect: 'slide',
       centeredSlides: false,
@@ -105,11 +124,11 @@ function initCarousels() {
       centeredSlides: false,
       breakpoints: {
         0: {
-          slidesPerView: 1,
+          slidesPerView: 1.5,
           spaceBetween: 10,
         },
         450: {
-          slidesPerView: 2,
+          slidesPerView: 2.4,
           spaceBetween: 10,
         },
         768: {
@@ -220,6 +239,7 @@ document.addEventListener("DOMContentLoaded", () => {
 //navbar
 document.addEventListener("DOMContentLoaded", () => {
   const nav = document.querySelector("#nav");
+  if (!nav) return;
 
   window.onscroll = function () {
     var scroll = document.documentElement.scrollTop;
