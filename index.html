@@ -13,22 +13,22 @@
   <main>
     <section class=" h-screen  bannerIndex relative flex flex-col">
       <div class="absolute inset-0 degradadoBannerIndex"></div>
-      <div class="flex items-end justify-center relative z-20 pt-[20px] line-wrapper  w-[calc(100%-340px)] mx-auto">
+      <div class="flex items-end justify-center relative z-20 pt-[20px] line-wrapper  w-[calc(100%-30px)] md:w-[calc(100%-100px)] lg:w-[calc(100%-340px)] mx-auto">
         <img src="img/logo.svg" class="object-cover px-6" alt="">
       </div>
 
-      <div class="flex-1 flex flex-col items-center justify-center relative  z-20">
-        <h1 class="text-white text-[70px] font-bold leading-[74px] mb-[70px]" style="text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      <div class="flex-1 max-md:mb-[71px] flex flex-col items-center justify-center relative  z-20">
+        <h1 class="text-white text-[30px] md:text-[60px] lg:text-[70px] font-bold leading-[74px] mb-[10px] md:mb-[50px] lg:mb-[70px]" style="text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 ">Hola, seleciona tu país</h1>
-        <div class="flex items-center justify-center gap-[40px]">
+        <div class="flex items-center justify-center gap-[20px] lg:gap-[40px]">
           <a href="/home.html"
-            class="flex bg-white rounded-[50px] justify-center items-center gap-2 w-[200px] h-[70px] text-[18px] font-bold">Perú
+            class="flex bg-white rounded-[50px] justify-center items-center gap-2 w-[130px] h-[50px] md:w-[200px] md:h-[70px] text-[14px] md:text-[18px] font-bold">Perú
             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
               <rect width="20.5882" height="14" rx="1.64706" fill="#F10000" />
               <rect x="6.58813" width="7.41177" height="14" fill="white" />
             </svg></a>
           <a href="/"
-            class="flex bg-white rounded-[50px] justify-center items-center gap-2 w-[200px] h-[70px] text-[18px] font-bold">Colombia
+            class="flex bg-white rounded-[50px] justify-center items-center gap-2 w-[130px] h-[50px] md:w-[200px] md:h-[70px] text-[14px] md:text-[18px] font-bold">Colombia
             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
               <rect width="20.5882" height="14" rx="1.64706" fill="#FFC700" />
               <rect y="5.76477" width="20.5882" height="4.11765" fill="#003CD7" />
@@ -39,7 +39,7 @@
         </div>
       </div>
 
-      <div class="relative z-20 w-[calc(100%-340px)] mx-auto">
+      <div class="relative z-20 w-[calc(100%-100px)] lg:w-[calc(100%-340px)] mx-auto hidden md:block">
         <hr class="h-[1px] bg-white w-full mt-20 mb-[30px] opacity-20">
         <p class="text-white/40 text-center mb-[30px] text-[11px]"><span class="font-bold">Grupo CALA</span> - ©2024
           Todos lo derechos reservados.</p>

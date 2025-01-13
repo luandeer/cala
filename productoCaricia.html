@@ -10,34 +10,130 @@
 </head>
 
 <body>
-  <header class="w-full  fixed top-0 z-40  h-[80px] bg-[#1B58CD] flex items-center">
-    <nav class="w-full  h-full flex items-center" >
-     <div class="max-w-[1440px] mx-auto flex items-center justify-between  w-full" >
-      <a href="/">
-        <img src="/img/logo.svg" alt="logo" class="logo object-cover w-[130px]"  /></a>
-      <div class="flex items-center gap-[3rem] justify-center text-white container-links">
-        <a href="/nosotros.html" class="menu__link">Nosotros</a>
-        <a href="/marcas.html" class="menu__link">Marcas</a>
-        <a href="/responsabilidadSocial.html" class="menu__link">Responsabilidad Social </a>
-        <a href="/noticias.html" class="menu__link">Noticias</a>
-        <a href="/contacto.html" class="menu__link">Contacto</a>
-        <a href="" class="flex items-center gap-1.5 border border-white rounded-full px-[12px]">
-          <p class="text-[12px] font-bold tracking-wider">Perú</p>
-          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
-            <rect width="20.5882" height="14" rx="1.64706" fill="#F10000" />
-            <rect x="6.58813" width="7.41177" height="14" fill="white" />
-          </svg>
-        </a>
+  <header class="w-full  fixed top-0 z-40 bg-[#1B58CD]  h-[90px] flex items-center">
+    <nav class="w-full px-8 md:px-10  h-full flex items-center" >
+      <div class="max-w-[1440px] mx-auto flex items-center justify-between  w-full">
+        <a href="/">
+          <img src="/img/logo.svg" alt="logo" class="logo object-cover w-[130px]" /></a>
+        <div class="hidden lg:flex items-center gap-[1.5rem] xl:gap-[2rem] justify-center text-white container-links">
+          <a href="/nosotros.html" class="menu__link">Nosotros</a>
+          <a href="/marcas.html" class="menu__link">Marcas</a>
+          <a href="/responsabilidadSocial.html" class="menu__link">Responsabilidad Social </a>
+          <a href="/noticias.html" class="menu__link">Noticias</a>
+          <a href="/contacto.html" class="menu__link">Contacto</a>
+          <div  class="">
+            <div class="unique-select-container relative w-full " data-name="paisWeb">
+              <button
+                class="unique-select-trigger font-inter text-white text-[12px] relative rounded-full  h-[35px]   min-w-[130px] max-w-[130px] w-full  flex items-center gap-0 bg-transparent border border-white  px-4 text-left focus:outline-none  "
+                aria-haspopup="listbox"
+                aria-expanded="false"
+              >
+                <span class="unique-select-display w-full flex items-center gap-1 font-semibold">Perú <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
+                  <rect width="20.5882" height="14" rx="1.64706" fill="#F10000" />
+                  <rect x="6.58813" width="7.41177" height="14" fill="white" />
+                </svg></span>
+                <span class="flex items-center   pointer-events-none w-fit">
+                  <img src="img/arrow.svg" class="w-max h-full rotate-90 object-cover" alt="">
+                </span>
+              </button>
+              <ul
+                class="unique-select-options absolute z-50 font-inter  text-[16px] mt-2 w-full bg-white  rounded-[12px] shadow-[0px_47px_13px_0px_rgba(94,_128,_158,_0.00),_0px_30px_12px_0px_rgba(94,_128,_158,_0.01),_0px_17px_10px_0px_rgba(94,_128,_158,_0.05),_0px_7px_7px_0px_rgba(94,_128,_158,_0.09),_0px_2px_4px_0px_rgba(94,_128,_158,_0.10)] hidden max-h-60 overflow-auto"
+                role="listbox"
+              >
+                <li class="unique-select-option px-4 py-2 hover:bg-[#EEEEEE] cursor-pointer text-[14px] text-black flex items-center gap-1" data-value="opcion1">Colombia <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
+                  <rect width="20.5882" height="14" rx="1.64706" fill="#FFC700"/>
+                  <rect y="5.76477" width="20.5882" height="4.11765" fill="#003CD7"/>
+                  <path d="M0 9.88232H20.5882V12.3529C20.5882 13.2626 19.8508 14 18.9412 14H1.64706C0.737412 14 0 13.2626 0 12.3529V9.88232Z" fill="#F10000"/>
+                </svg></li>
+                <li class="unique-select-option px-4 py-2 hover:bg-[#EEEEEE] cursor-pointer text-[14px] flex items-center gap-1 text-black" data-value="opcion2">Perú <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
+                  <rect width="20.5882" height="14" rx="1.64706" fill="#F10000" />
+                  <rect x="6.58813" width="7.41177" height="14" fill="white" />
+                </svg></li>
+              </ul>
+              <input type="hidden" name="paisWeb" value="">
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="flex items-center gap-4 lg:hidden">
+          <div class="w-full">
+            <div class="unique-select-container relative w-full " data-name="paisWeb">
+              <button
+                class="unique-select-trigger font-inter text-white text-[12px] relative rounded-full  h-[35px]   min-w-[110px] w-full  flex items-center gap-0 bg-transparent border border-white  px-4 text-left focus:outline-none  "
+                aria-haspopup="listbox"
+                aria-expanded="false"
+              >
+                <span class="unique-select-display w-full flex items-center gap-1 font-semibold">Perú <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
+                  <rect width="20.5882" height="14" rx="1.64706" fill="#F10000" />
+                  <rect x="6.58813" width="7.41177" height="14" fill="white" />
+                </svg></span>
+                <span class="flex items-center   pointer-events-none w-fit">
+                  <img src="img/arrow.svg" class="w-max h-full rotate-90 object-cover" alt="">
+                </span>
+              </button>
+              <ul
+                class="unique-select-options absolute z-50 font-inter  text-[16px] mt-2 w-full bg-white  rounded-[12px] shadow-[0px_47px_13px_0px_rgba(94,_128,_158,_0.00),_0px_30px_12px_0px_rgba(94,_128,_158,_0.01),_0px_17px_10px_0px_rgba(94,_128,_158,_0.05),_0px_7px_7px_0px_rgba(94,_128,_158,_0.09),_0px_2px_4px_0px_rgba(94,_128,_158,_0.10)] hidden max-h-60 overflow-auto"
+                role="listbox"
+              >
+                <li class="unique-select-option px-4 py-2 hover:bg-[#EEEEEE] cursor-pointer text-[14px]" data-value="opcion1">Colombia</li>
+                <li class="unique-select-option px-4 py-2 hover:bg-[#EEEEEE] cursor-pointer text-[14px] flex items-center gap-1" data-value="opcion2">Perú <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
+                  <rect width="20.5882" height="14" rx="1.64706" fill="#F10000" />
+                  <rect x="6.58813" width="7.41177" height="14" fill="white" />
+                </svg></li>
+              </ul>
+              <input type="hidden" name="paisWeb" value="">
+            </div>
+          </div>
+          <button id="menuButton" class="relative group flex items-center gap-6">
+            
+            
+
+            <div class="w-8 h-8 flex items-center justify-center">
+              <!-- Ícono de hamburguesa -->
+              <svg id="iconHamburger" xmlns="http://www.w3.org/2000/svg" class="w-full" width="31" height="22"
+                viewBox="0 0 31 22" fill="none">
+                <line x1="0.75" y1="1.25" x2="30.25" y2="1.25" stroke="white" stroke-width="1.5"
+                  stroke-linecap="round" />
+                <line x1="0.75" y1="11.25" x2="30.25" y2="11.25" stroke="white" stroke-width="1.5"
+                  stroke-linecap="round" />
+                <line x1="0.75" y1="21.25" x2="30.25" y2="21.25" stroke="white" stroke-width="1.5"
+                  stroke-linecap="round" />
+              </svg>
+
+              <!-- Ícono de "X" -->
+              <svg id="iconClose" xmlns="http://www.w3.org/2000/svg" class="hidden w-full h-full scale-110" width="31"
+                height="31" viewBox="0 0 42 43" fill="none">
+                <path d="M12.25 12.75L29.75 30.25M12.25 30.25L29.75 12.75" stroke="white" stroke-width="3.5"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+
+          </button>
+        </div>
       </div>
-     </div>
     </nav>
+
+
   </header>
+
+  <!-- Modal - Menú Responsive -->
+  <div id="mobileMenu"
+    class="fixed inset-0 bg-[#1B58CD] text-white flex flex-col items-center justify-center gap-10 text-lg transform -translate-y-full transition-transform duration-500 z-30">
+    <ul class="flex flex-col items-center gap-10">
+      <li><a href="/nosotros.html">Nosotros</a></li>
+      <li><a href="/marcas.html">Marcas</a></li>
+      <li><a href="/responsabilidadSocial.html">Responsabilidad Social</a></li>
+      <li><a href="/noticias.html">Noticias</a></li>
+      <li><a href="/contacto.html">Contacto</a></li>
+    </ul>
+  </div>
   <main>
     <section class="fondoProducto mt-[80px]">
-      <div class=" pb-20 ">
+      <div class=" ">
 
         <div class=" relative  h-screen">
-          <div class="adornosProducto absolute inset-0">
+          <div class="hidden lg:block adornosProducto absolute inset-0">
 
           </div>
           <div class="absolute inset-0  max-w-[532px] mx-auto top-1/2 transform -translate-y-[50%]">
@@ -50,10 +146,10 @@
             </p>
             <div>
               <h3 class="text-[24px] font-bold text-center mb-[26px]">Valor que acaricia</h3>
-              <div class="flex items-center justify-center gap-8">
-                <img src="img/producto/prendas.png" alt="">
-                <img src="img/producto/perfume.png" alt="">
-                <img src="img/producto/alergias.png" alt="">
+              <div class="flex items-center justify-center gap-4 md:gap-8">
+                <img src="img/producto/prendas.png" class="object-cover w-full h-full max-w-[100px] md:max-w-[120px]" alt="">
+                <img src="img/producto/perfume.png" class="object-cover w-full h-full max-w-[100px] md:max-w-[120px]" alt="">
+                <img src="img/producto/alergias.png" class="object-cover w-full h-full max-w-[100px] md:max-w-[120px]" alt="">
               </div>
             </div>
           </div>
@@ -61,34 +157,40 @@
 
 
       </div>
-      <div class="mb-20 relative max-w-[1200px] mx-auto ">
-        <div class="custom-prev-product custom-swiper-button ">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="25" viewBox="0 0 22 25" fill="none">
-            <path d="M7.36249 19.79L2.11249 12.44M2.11249 12.44L7.36249 5.09001M2.11249 12.44L20.4875 12.44"
-              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
+      <div class="mb-20 relative md:max-w-[1200px] mx-auto px-6">
+        <div class="hidden lg:block ">
+          <div class=" custom-prev-product custom-swiper-button ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="25" viewBox="0 0 22 25" fill="none">
+              <path d="M7.36249 19.79L2.11249 12.44M2.11249 12.44L7.36249 5.09001M2.11249 12.44L20.4875 12.44"
+                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
         </div>
         
         <div class="swiper carouselProduct"> 
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div class="max-w-[950px]  mx-auto flex items-center">
-                <div class="max-w-[500px] w-full h-full">
+              <div class="md:max-w-[950px]  mx-auto flex items-center justify-center">
+                <div class="hidden lg:block max-w-[500px] w-full h-full">
                   <img src="img/producto/Caricia.png" class="object-cover w-full h-full" alt="">
                 </div>
-                <div class="max-w-[434px]">
-                  <span class="text-center text-[28px] text-[#272727] font-normal">Productos</span>
-                  <h2 class="titulo-h2 text-start mb-[24px] !text-[50px] max-w-[424px]"><span class="block mb-1.5">Detergente
+                <div class="lg:max-w-[434px] text-center lg:text-start">
+                  <p class="text-center lg:text-start text-[16px] md:text-[28px] text-[#272727] font-normal mb-1">Productos</p>
+                  <h2 class="titulo-h2 text-center lg:text-start mb-[24px] !text-[30px] md:!text-[50px] mx-auto lg:mx-0 max-md:!leading-none md:max-w-[424px]"><span class="block mb-1.5">Detergente
                     </span> en polvo</h2>
-                  <p class=" descripcion-v1 mb-[35px]">
+                  <p class=" descripcion-v1 mb-[35px] text-center lg:text-start w-full max-w-full md:max-w-[500px] mx-auto">
                     Diseñado para brindar un cuidado excepcional a las fibras y colores de tus prendas más queridas con una
                     fragancia exclusiva. Además, dermatológicamente probado, evitando causar irritaciones en la piel.
                   </p>
-                  <div class="border border-dashed border-black rounded-[20px] py-[17px] px-[25px] space-y-[6px]">
-                    <h4>Variedades</h4>
-                    <h1 class="font-bold">Rosado</h1>
-                    <h4>Presentaciones</h4>
-                    <div class="font-bold flex space-x-4">
+                 <div class="flex flex-col md:flex-row items-center w-full  justify-center ">
+                  <div class="block lg:hidden max-w-[300px] w-full h-full">
+                    <img src="img/producto/Caricia.png" class="object-cover w-full h-full" alt="">
+                  </div>
+                  <div class="border border-dashed flex-1 max-w-full md:max-w-[450px] border-black rounded-[20px] py-[17px] px-[15px] md:px-[25px] space-y-[6px]">
+                    <h4 class=" text-start max-md:text-[14px]">Variedades</h4>
+                    <h2 class="font-bold text-start max-md:text-[14px]">Rosado</h2>
+                    <h4 class=" text-start max-md:text-[14px]">Presentaciones</h4>
+                    <div class="font-bold flex space-x-2 md:space-x-4 max-md:text-[14px]">
                       <span>100gr</span>
                       <span>|</span>
                       <span>330gr</span>
@@ -102,27 +204,32 @@
       
       
                   </div>
+                 </div>
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="max-w-[950px]  mx-auto flex items-center">
-                <div class="max-w-[500px] w-full h-full">
+              <div class="md:max-w-[950px]  mx-auto flex items-center justify-center">
+                <div class="hidden lg:block max-w-[500px] w-full h-full">
                   <img src="img/producto/Caricia.png" class="object-cover w-full h-full" alt="">
                 </div>
-                <div class="max-w-[434px]">
-                  <span class="text-center text-[28px] text-[#272727] font-normal">Productos</span>
-                  <h2 class="titulo-h2 text-start mb-[24px] !text-[50px] max-w-[424px]"><span class="block mb-1.5">Detergente
+                <div class="lg:max-w-[434px] text-center lg:text-start">
+                  <p class="text-center lg:text-start text-[16px] md:text-[28px] text-[#272727] font-normal mb-1">Productos</p>
+                  <h2 class="titulo-h2 text-center lg:text-start mb-[24px] !text-[30px] md:!text-[50px] mx-auto lg:mx-0 max-md:!leading-none md:max-w-[424px]"><span class="block mb-1.5">Detergente
                     </span> en polvo</h2>
-                  <p class=" descripcion-v1 mb-[35px]">
+                  <p class=" descripcion-v1 mb-[35px] text-center lg:text-start w-full max-w-full md:max-w-[500px] mx-auto">
                     Diseñado para brindar un cuidado excepcional a las fibras y colores de tus prendas más queridas con una
                     fragancia exclusiva. Además, dermatológicamente probado, evitando causar irritaciones en la piel.
                   </p>
-                  <div class="border border-dashed border-black rounded-[20px] py-[17px] px-[25px] space-y-[6px]">
-                    <h4>Variedades</h4>
-                    <h1 class="font-bold">Rosado</h1>
-                    <h4>Presentaciones</h4>
-                    <div class="font-bold flex space-x-4">
+                 <div class="flex flex-col md:flex-row items-center w-full  justify-center ">
+                  <div class="block lg:hidden max-w-[300px] w-full h-full">
+                    <img src="img/producto/Caricia.png" class="object-cover w-full h-full" alt="">
+                  </div>
+                  <div class="border border-dashed flex-1 max-w-full md:max-w-[450px] border-black rounded-[20px] py-[17px] px-[15px] md:px-[25px] space-y-[6px]">
+                    <h4 class=" text-start max-md:text-[14px]">Variedades</h4>
+                    <h2 class="font-bold text-start max-md:text-[14px]">Rosado</h2>
+                    <h4 class=" text-start max-md:text-[14px]">Presentaciones</h4>
+                    <div class="font-bold flex space-x-2 md:space-x-4 max-md:text-[14px]">
                       <span>100gr</span>
                       <span>|</span>
                       <span>330gr</span>
@@ -136,27 +243,32 @@
       
       
                   </div>
+                 </div>
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="max-w-[950px]  mx-auto flex items-center">
-                <div class="max-w-[500px] w-full h-full">
+              <div class="md:max-w-[950px]  mx-auto flex items-center justify-center">
+                <div class="hidden lg:block max-w-[500px] w-full h-full">
                   <img src="img/producto/Caricia.png" class="object-cover w-full h-full" alt="">
                 </div>
-                <div class="max-w-[434px]">
-                  <span class="text-center text-[28px] text-[#272727] font-normal">Productos</span>
-                  <h2 class="titulo-h2 text-start mb-[24px] !text-[50px] max-w-[424px]"><span class="block mb-1.5">Detergente
+                <div class="lg:max-w-[434px] text-center lg:text-start">
+                  <p class="text-center lg:text-start text-[16px] md:text-[28px] text-[#272727] font-normal mb-1">Productos</p>
+                  <h2 class="titulo-h2 text-center lg:text-start mb-[24px] !text-[30px] md:!text-[50px] mx-auto lg:mx-0 max-md:!leading-none md:max-w-[424px]"><span class="block mb-1.5">Detergente
                     </span> en polvo</h2>
-                  <p class=" descripcion-v1 mb-[35px]">
+                  <p class=" descripcion-v1 mb-[35px] text-center lg:text-start w-full max-w-full md:max-w-[500px] mx-auto">
                     Diseñado para brindar un cuidado excepcional a las fibras y colores de tus prendas más queridas con una
                     fragancia exclusiva. Además, dermatológicamente probado, evitando causar irritaciones en la piel.
                   </p>
-                  <div class="border border-dashed border-black rounded-[20px] py-[17px] px-[25px] space-y-[6px]">
-                    <h4>Variedades</h4>
-                    <h1 class="font-bold">Rosado</h1>
-                    <h4>Presentaciones</h4>
-                    <div class="font-bold flex space-x-4">
+                 <div class="flex flex-col md:flex-row items-center w-full  justify-center ">
+                  <div class="block lg:hidden max-w-[300px] w-full h-full">
+                    <img src="img/producto/Caricia.png" class="object-cover w-full h-full" alt="">
+                  </div>
+                  <div class="border border-dashed flex-1 max-w-full md:max-w-[450px] border-black rounded-[20px] py-[17px] px-[15px] md:px-[25px] space-y-[6px]">
+                    <h4 class=" text-start max-md:text-[14px]">Variedades</h4>
+                    <h2 class="font-bold text-start max-md:text-[14px]">Rosado</h2>
+                    <h4 class=" text-start max-md:text-[14px]">Presentaciones</h4>
+                    <div class="font-bold flex space-x-2 md:space-x-4 max-md:text-[14px]">
                       <span>100gr</span>
                       <span>|</span>
                       <span>330gr</span>
@@ -170,42 +282,47 @@
       
       
                   </div>
+                 </div>
                 </div>
               </div>
             </div>
 
           </div>
         </div>
+       <div class="hidden lg:block">
         <div class="custom-next-product custom-swiper-button ">
           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="25" viewBox="0 0 22 25" fill="none">
             <path d="M14.6375 5.20999L19.8875 12.56M19.8875 12.56L14.6375 19.91M19.8875 12.56L1.51251 12.56"
               stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </div>
+       </div>
         
       </div>
-      <div
-        class="py-10 border border-dashed border-black rounded-[20px] relative max-w-[1100px] mx-auto h-[237px] flex items-center justify-center">
-        <div class="flex items-center justify-center gap-[92px]">
-          <img src="img/producto/metro.png" alt="">
-          <img src="img/producto/wong.png" alt="">
-          <img src="img/producto/plazaVea.png" alt="">
-          <img src="img/producto/mass.png" alt="">
-          <img src="img/producto/vega.png" alt="">
+      <div class="max-lg:px-6">
+        <div
+        class="py-6 md:py-10 border border-dashed border-black rounded-[20px] relative max-w-[500px] md:max-w-[750px] lg:max-w-[1000px] md:mx-auto md:h-[237px] flex items-center justify-center mx-auto ">
+        <div class="flex items-center justify-center gap-[10px] md:gap-[40px] lg::gap-[92px]">
+          <img src="img/producto/metro.png" class="object-cover max-sm:max-w-[50px] sm:max-w-[60px] md:max-w-full w-full h-full" alt="">
+          <img src="img/producto/wong.png" class="object-cover max-sm:max-w-[50px] sm:max-w-[60px] md:max-w-full w-full h-full" alt="">
+          <img src="img/producto/plazaVea.png" class="object-cover max-sm:max-w-[50px] sm:max-w-[60px] md:max-w-full w-full h-full" alt="">
+          <img src="img/producto/mass.png" class="object-cover max-sm:max-w-[50px] sm:max-w-[60px] md:max-w-full w-full h-full" alt="">
+          <img src="img/producto/vega.png" class="object-cover max-sm:max-w-[50px] sm:max-w-[60px] md:max-w-full w-full h-full" alt="">
 
         </div>
 
         <span
-          class="absolute left-1/2 -top-3 bg-[#FFF3F8] px-2 transform -translate-x-[50%] font-bold">Encuéntranos
+          class="absolute left-1/2 -top-3 bg-[#FFF3F8] px-2 transform text-[14px] sm:text-[16px] -translate-x-[50%] font-bold">Encuéntranos
           en:</span>
 
 
       </div>
-      <div class="max-w-[1100px] mx-auto flex items-center justify-center gap-20 pt-20 pb-20">
-        <img src="img/producto/cel.png" alt="">
-        <div class="flex flex-col items-start justify-start gap-4">
+      </div>
+      <div class="max-w-[1100px] mx-auto flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 pt-20 pb-20">
+        <img src="img/producto/cel.png" class="object-cover max-md:max-w-[250px]" alt="">
+        <div class="flex flex-col items-center justify-center md:items-start md:justify-start gap-4">
           <p>
-            <span class="font-bold block">Síguenos</span> y
+            <strong class=" block text-center md:text-start">Síguenos</strong> y
             mantente informado:
           </p>
           <svg xmlns="http://www.w3.org/2000/svg" width="220" height="60" viewBox="0 0 220 60" fill="none">
@@ -223,14 +340,14 @@
     </section>
     <section class="bg-white py-[90px]">
       <div class="container max-w-[1256px]">
-       <div class="flex items-center max-w-[1000px] mx-auto w-full">
-        <h2 class="titulo-h2 max-w-[300px]">Conoce nuestras otras marcas</h2>
+       <div class="flex flex-col lg:flex-row items-center max-w-[1000px] mx-auto w-full">
+        <h2 class="titulo-h2 lg:max-w-[300px] max-lg:mb-10 text-center lg:text-start max-md:text-[30px] max-lg:!leading-none">Conoce nuestras otras marcas</h2>
         <div class="flex items-end gap-[30px] ">
-          <div class="max-w-[300px] h-[300px] w-full">
+          <div class="max-w-[300px] h-[200px] md:h-[300px] w-full">
             <img src="img/noticias/productoCariciaNoticias.png" class="object-cover w-full h-full" alt="">
           </div>
           
-          <div class="max-w-[350px] h-[200px] w-full">
+          <div class="max-w-[350px] h-[100px] md:h-[200px] w-full">
             <img src="img/noticias/productoMonclearNoticias.png" class="object-cover w-full h-full" alt="">
           </div>
 
@@ -245,12 +362,13 @@
 
   </main>
   <footer class="bg-footer">
-    <div class="max-w-[1440px] mx-auto pt-[60px] pb-[30px] flex flex-col gap-[30px]">
-      <div class="logo">
+    <div class="max-w-[1440px] mx-auto pt-[60px] pb-[30px] flex flex-col gap-[0px] lg:gap-[30px] px-6">
+      <div class="logo max-lg:mb-[40px]">
         <img src="img/logoBlanco.svg" class="object-cover" alt="logo" />
       </div>
-      <div class="flex items-center gap-[100px] w-full">
-        <div class="flex flex-col gap-6 text-[#ffffff]/50 w-full max-w-[420px]">
+     
+      <div class="flex lg:flex-row flex-col items-center gap-[50px] xl:gap-[80px] 2xl:gap-[100px] w-full">
+        <div class="flex flex-col gap-6  text-[#ffffff] w-full lg:max-w-[420px]">
           <div class="flex items-start gap-4 w-full">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 14 18" fill="none">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -282,30 +400,68 @@
             <p class="number leading-none text-[14px] font-[300px]">960 263 560</p>
           </div>
         </div>
-        <div class="footer-line"></div>
-        <div class="flex items-center gap-[100px] text-[#FBFBFB] w-full  justify-end">
-          <div class="flex flex-col gap-4">
+        <div class="footer-line hidden lg:block"></div>
+        <div class="block md:hidden w-full"> 
+          <div class="accordion w-full">
+            <div class="accordion-item">
+              <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Mapa de Sitio</span><span class="icon" aria-hidden="true"></span></button>
+              <div class="accordion-content">
+                <div class="flex flex-col gap-4 w-full">
+                  <a href="" class="text-[14px] font-[300px]">Inicio</a>
+                  <a href="" class="text-[14px] font-[300px]">Nuestras marcas</a>
+                  <a href="" class="text-[14px] font-[300px]">Nuestra historia</a>
+                  <a href="" class="text-[14px] font-[300px]">Responsabilidad social</a>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Cómo encontrarnos</span><span class="icon" aria-hidden="true"></span></button>
+              <div class="accordion-content">
+                <div class="flex flex-col gap-4  w-full">
+                  <a href="" class="text-[14px] font-[300px]">Noticias</a>
+                  <a href="" class="text-[14px] font-[300px]">Contacto</a>
+                  <a href="" class="text-[14px] font-[300px]">Preguntas frecuentes</a>
+                  <a href="" class="text-[14px] font-[300px]">Libro de reclamaciones</a>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Información Legal</span><span class="icon" aria-hidden="true"></span></button>
+              <div class="accordion-content">
+                <div class="flex flex-col gap-4  w-full">
+                  <a href="" class="text-[14px] font-[300px]">Línea de trasparencia</a>
+                  <a href="" class="text-[14px] font-[300px]">Aviso de Privacidad</a>
+                  <a href="" class="text-[14px] font-[300px]">Preguntas frecuentes</a>
+                  <a href="" class="text-[14px] font-[300px]">PQR</a>
+                </div>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+        <div class="hidden md:flex items-center gap-[40px] 2xl:gap-[100px]  text-[#FBFBFB] w-full  justify-start border-t lg:border-t-0 border-[#1AA9E3]/20 pt-8">
+          <div class="flex flex-col gap-4 w-full">
             <a href="" class="text-[14px] font-[300px]">Inicio</a>
             <a href="" class="text-[14px] font-[300px]">Nuestras marcas</a>
             <a href="" class="text-[14px] font-[300px]">Nuestra historia</a>
             <a href="" class="text-[14px] font-[300px]">Responsabilidad social</a>
           </div>
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4  w-full">
             <a href="" class="text-[14px] font-[300px]">Noticias</a>
             <a href="" class="text-[14px] font-[300px]">Contacto</a>
             <a href="" class="text-[14px] font-[300px]">Preguntas frecuentes</a>
-            <a href="" class= "text-[14px] font-[300px]">Libro de reclamaciones</a>
+            <a href="" class="text-[14px] font-[300px]">Libro de reclamaciones</a>
           </div>
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4  w-full">
             <a href="" class="text-[14px] font-[300px]">Línea de trasparencia</a>
             <a href="" class="text-[14px] font-[300px]">Aviso de Privacidad</a>
             <a href="" class="text-[14px] font-[300px]">Preguntas frecuentes</a>
-            <a href="" class= "text-[14px] font-[300px]">PQR</a>
+            <a href="" class="text-[14px] font-[300px]">PQR</a>
           </div>
         </div>
       </div>
-      <div class="footer-line-b"></div>
-      <div class="flex items-center justify-between text-[#ffffff]/50">
+    
+      <div class="flex flex-col max-md:gap-2 md:flex-row items-center justify-between text-[#ffffff] border-t border-[#1AA9E3]/20 pt-8 mt-10">
         <div>
           <p class="text-[11px]"> <strong>Grupo CALA</strong><span> - ©2024 Todos lo derechos reservados.</span></p>
         </div>

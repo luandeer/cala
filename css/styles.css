@@ -24,6 +24,15 @@
 		rgba(255, 157, 191, 0.5) 98.8%
 	);
 }
+/* 
+menu responsive */
+.no-scroll {
+	position: fixed;
+	width: 100%;
+	overflow-y: scroll;
+}
+
+/* fin de menu responsive */
 
 .bannerHome {
 	background: url('../img/home/bannerHome.png');
@@ -482,21 +491,129 @@ button:active {
 	background-color: #212c56;
 }
 .footer-line {
-	height: 200px;
+	height: 150px;
 	border-right: 1px solid #1aa9e3;
 	opacity: 0.2;
 	border-radius: 100%;
 }
-.footer-line-b {
-	width: 100%;
-	border-bottom: 1px solid #1aa9e3;
-	opacity: 0.2;
-	border-radius: 100%;
+
+/*accordion*/
+
+.accordion .accordion-item {
+	border-bottom: 1px solid #ffffffe1;
 }
+.accordion .accordion-item button[aria-expanded='true'] {
+	border-bottom: 1px solid white;
+}
+.accordion button {
+	position: relative;
+	display: block;
+	text-align: left;
+	width: 100%;
+	padding: 1em 0;
+	color: white;
+	font-size: 16px;
+	font-weight: 300;
+	border: none;
+	background: none;
+	outline: none;
+}
+.accordion button:hover,
+.accordion button:focus {
+	cursor: pointer;
+	color: white;
+}
+.accordion button:hover::after,
+.accordion button:focus::after {
+	cursor: pointer;
+	color: white;
+	border: 1px solid white;
+}
+.accordion button .accordion-title {
+	padding: 1em 1.5em 1em 0;
+}
+.accordion button .icon {
+	display: inline-block;
+	position: absolute;
+	top: 18px;
+	right: 0;
+	width: 22px;
+	height: 22px;
+	border: 1px solid;
+	border-radius: 22px;
+}
+.accordion button .icon::before {
+	display: block;
+	position: absolute;
+	content: '';
+	top: 9px;
+	left: 5px;
+	width: 10px;
+	height: 2px;
+	background: currentColor;
+}
+.accordion button .icon::after {
+	display: block;
+	position: absolute;
+	content: '';
+	top: 5px;
+	left: 9px;
+	width: 2px;
+	height: 10px;
+	background: currentColor;
+}
+.accordion button[aria-expanded='true'] {
+	color: white;
+}
+.accordion button[aria-expanded='true'] .icon::after {
+	width: 0;
+}
+.accordion button[aria-expanded='true'] + .accordion-content {
+	opacity: 1;
+	max-height: 100%;
+	transition: all 200ms linear;
+	will-change: opacity;
+	padding: 20px 0;
+}
+.accordion .accordion-content {
+	opacity: 0;
+	max-height: 0;
+	overflow: hidden;
+	transition: opacity 200ms linear;
+	will-change: opacity, max-height;
+	font-size: 14px;
+	font-weight: 300;
+	color: white;
+}
+
+/*Fin accordion*/
+
+@media (max-width: 1680px) {
+	.bannerNosotros,
+	.bannerContacto,
+	.bannerMarcas,
+	.bannerResponsabilidad,
+	.bannerLegal {
+		background-size: cover;
+		max-width: calc(100% - 60px);
+		height: 350px;
+	}
+}
+
 @media (max-width: 1280px) {
 	.bannerHome {
 		background-position: right 60% center;
 	}
+	.bannerNosotros,
+	.bannerContacto,
+	.bannerMarcas,
+	.bannerResponsabilidad,
+	.bannerLegal {
+		background-size: cover;
+		max-width: calc(100% - 48px);
+		height: 350px;
+	}
+
 	.fondoMapa {
 		background-size: cover;
 		background-position: right -250px bottom 50%;
@@ -517,7 +634,7 @@ button:active {
 	.bannerResponsabilidad,
 	.bannerLegal {
 		background-size: cover;
-		max-width: calc(100% - 100px);
+		max-width: calc(100% - 48px);
 		height: 350px;
 	}
 	.subtitulo {
