@@ -862,6 +862,26 @@ video {
   top: 1.5rem;
 }
 
+.-right-\[8\%\]{
+  right: -8%;
+}
+
+.-left-\[10\%\]{
+  left: -10%;
+}
+
+.-right-\[10\%\]{
+  right: -10%;
+}
+
+.-left-\[12\%\]{
+  left: -12%;
+}
+
+.-right-\[12\%\]{
+  right: -12%;
+}
+
 .\!z-20{
   z-index: 20 !important;
 }
