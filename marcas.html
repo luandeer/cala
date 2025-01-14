@@ -4,11 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/output.css" />
-
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <title>Document</title>
 </head>
 <body>
-  <header class="w-full  fixed top-0 z-40  h-[90px] flex items-center">
+  <header class="w-full  fixed top-0 z-40  h-[90px] flex items-center" data-aos="fade-down" 
+  data-aos-duration="900" 
+  data-aos-delay="400"
+  data-aos-easing="ease-out-sine"
+  data-aos-once="true">
     <nav class="w-full px-8 md:px-10  h-full flex items-center" id="nav">
       <div class="max-w-[1440px] mx-auto flex items-center justify-between  w-full">
         <a href="/">
@@ -20,68 +24,56 @@
           <a href="/noticias.html" class="menu__link">Noticias</a>
           <a href="/contacto.html" class="menu__link">Contacto</a>
           <div  class="">
-            <div class="unique-select-container relative w-full " data-name="paisWeb">
+            <div class="unique-select-container relative w-full" data-name="paisWeb">
               <button
-                class="unique-select-trigger font-inter text-white text-[12px] relative rounded-full  h-[35px]   min-w-[130px] max-w-[130px] w-full  flex items-center gap-0 bg-transparent border border-white  px-4 text-left focus:outline-none  "
+                class="unique-select-trigger font-inter text-white text-[12px] relative rounded-full h-[35px] min-w-[105px] max-w-[105px] w-full flex items-center gap-0 bg-transparent border border-white px-4 text-left focus:outline-none"
                 aria-haspopup="listbox"
                 aria-expanded="false"
               >
-                <span class="unique-select-display w-full flex items-center gap-1 font-semibold">Perú <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
-                  <rect width="20.5882" height="14" rx="1.64706" fill="#F10000" />
-                  <rect x="6.58813" width="7.41177" height="14" fill="white" />
-                </svg></span>
-                <span class="flex items-center   pointer-events-none w-fit">
+                <span class="unique-select-display w-full flex items-center gap-1.5 font-semibold">
+                  PER <img src="img/peru.svg" alt="Perú" class="w-4 h-4 ">
+                </span>
+                <span class="flex items-center pointer-events-none w-fit">
                   <img src="img/arrow.svg" class="w-max h-full rotate-90 object-cover" alt="">
                 </span>
               </button>
               <ul
-                class="unique-select-options absolute z-50 font-inter  text-[16px] mt-2 w-full bg-white  rounded-[12px] shadow-[0px_47px_13px_0px_rgba(94,_128,_158,_0.00),_0px_30px_12px_0px_rgba(94,_128,_158,_0.01),_0px_17px_10px_0px_rgba(94,_128,_158,_0.05),_0px_7px_7px_0px_rgba(94,_128,_158,_0.09),_0px_2px_4px_0px_rgba(94,_128,_158,_0.10)] hidden max-h-60 overflow-auto"
+                class="unique-select-options absolute z-50 font-inter text-[16px] mt-2 min-w-[130px] max-w-[130px] w-full bg-white rounded-[12px] shadow-[0px_47px_13px_0px_rgba(94,_128,_158,_0.00),_0px_30px_12px_0px_rgba(94,_128,_158,_0.01),_0px_17px_10px_0px_rgba(94,_128,_158,_0.05),_0px_7px_7px_0px_rgba(94,_128,_158,_0.09),_0px_2px_4px_0px_rgba(94,_128,_158,_0.10)] hidden max-h-60 overflow-auto"
                 role="listbox"
-              >
-                <li class="unique-select-option px-4 py-2 hover:bg-[#EEEEEE] cursor-pointer text-[14px] text-black flex items-center gap-1" data-value="opcion1">Colombia <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
-                  <rect width="20.5882" height="14" rx="1.64706" fill="#FFC700"/>
-                  <rect y="5.76477" width="20.5882" height="4.11765" fill="#003CD7"/>
-                  <path d="M0 9.88232H20.5882V12.3529C20.5882 13.2626 19.8508 14 18.9412 14H1.64706C0.737412 14 0 13.2626 0 12.3529V9.88232Z" fill="#F10000"/>
-                </svg></li>
-                <li class="unique-select-option px-4 py-2 hover:bg-[#EEEEEE] cursor-pointer text-[14px] flex items-center gap-1 text-black" data-value="opcion2">Perú <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
-                  <rect width="20.5882" height="14" rx="1.64706" fill="#F10000" />
-                  <rect x="6.58813" width="7.41177" height="14" fill="white" />
-                </svg></li>
-              </ul>
-              <input type="hidden" name="paisWeb" value="">
+              ></ul>
+              <input type="hidden" name="paisWeb" value="PER"> <!-- Valor predeterminado -->
             </div>
+            
+            
+            
+            
+            
           </div>
         </div>
         
         
         <div class="flex items-center gap-4 lg:hidden">
           <div class="w-full">
-            <div class="unique-select-container relative w-full " data-name="paisWeb">
+            <div class="unique-select-container relative w-full" data-name="paisWeb">
               <button
-                class="unique-select-trigger font-inter text-white text-[12px] relative rounded-full  h-[35px]   min-w-[110px] w-full  flex items-center gap-0 bg-transparent border border-white  px-4 text-left focus:outline-none  "
+                class="unique-select-trigger font-inter text-white text-[12px] relative rounded-full h-[35px] min-w-[105px] max-w-[105px] w-full flex items-center gap-0 bg-transparent border border-white px-4 text-left focus:outline-none"
                 aria-haspopup="listbox"
                 aria-expanded="false"
               >
-                <span class="unique-select-display w-full flex items-center gap-1 font-semibold">Perú <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
-                  <rect width="20.5882" height="14" rx="1.64706" fill="#F10000" />
-                  <rect x="6.58813" width="7.41177" height="14" fill="white" />
-                </svg></span>
-                <span class="flex items-center   pointer-events-none w-fit">
+                <span class="unique-select-display w-full flex items-center gap-1.5 font-semibold">
+                  PER <img src="img/peru.svg" alt="Perú" class="w-4 h-4 ">
+                </span>
+                <span class="flex items-center pointer-events-none w-fit">
                   <img src="img/arrow.svg" class="w-max h-full rotate-90 object-cover" alt="">
                 </span>
               </button>
               <ul
-                class="unique-select-options absolute z-50 font-inter  text-[16px] mt-2 w-full bg-white  rounded-[12px] shadow-[0px_47px_13px_0px_rgba(94,_128,_158,_0.00),_0px_30px_12px_0px_rgba(94,_128,_158,_0.01),_0px_17px_10px_0px_rgba(94,_128,_158,_0.05),_0px_7px_7px_0px_rgba(94,_128,_158,_0.09),_0px_2px_4px_0px_rgba(94,_128,_158,_0.10)] hidden max-h-60 overflow-auto"
+                class="unique-select-options absolute z-50 font-inter text-[16px] mt-2 min-w-[130px] max-w-[130px] w-full bg-white rounded-[12px] shadow-[0px_47px_13px_0px_rgba(94,_128,_158,_0.00),_0px_30px_12px_0px_rgba(94,_128,_158,_0.01),_0px_17px_10px_0px_rgba(94,_128,_158,_0.05),_0px_7px_7px_0px_rgba(94,_128,_158,_0.09),_0px_2px_4px_0px_rgba(94,_128,_158,_0.10)] hidden max-h-60 overflow-auto"
                 role="listbox"
-              >
-                <li class="unique-select-option px-4 py-2 hover:bg-[#EEEEEE] cursor-pointer text-[14px]" data-value="opcion1">Colombia</li>
-                <li class="unique-select-option px-4 py-2 hover:bg-[#EEEEEE] cursor-pointer text-[14px] flex items-center gap-1" data-value="opcion2">Perú <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
-                  <rect width="20.5882" height="14" rx="1.64706" fill="#F10000" />
-                  <rect x="6.58813" width="7.41177" height="14" fill="white" />
-                </svg></li>
-              </ul>
-              <input type="hidden" name="paisWeb" value="">
+              ></ul>
+              <input type="hidden" name="paisWeb" value="PER"> <!-- Valor predeterminado -->
             </div>
+            
           </div>
           <button id="menuButton" class="relative group flex items-center gap-6">
             
@@ -127,19 +119,25 @@
     </ul>
   </div>
   <main>
-    <section class=" mb-20">
-      <div class=" w-full  relative  mx-auto bannerMarcas ">
+    <section >
+      <div class=" w-full  relative  mx-auto bannerMarcas " >
         <div class="absolute inset-0 degradadoBannerNosotros"></div>
       </div>
         <div class="container max-w-[1440px] pb-20 pt-[40px] md:pt-[40px] lg:pt-[80px] ">
           <div class="lg:ml-[8%]">
-            <h1 class="subtitulo lg:max-w-[312px] mb-[10px] md:mb-[35px] max-lg:mx-auto text-center lg:text-start">Nuestras
+            <h1 class="subtitulo lg:max-w-[312px] mb-[10px] md:mb-[35px] max-lg:mx-auto text-center lg:text-start"  data-aos="fade-up" 
+            data-aos-duration="900" 
+            data-aos-once="true">Nuestras
               marcas</h1>
-              <p class="max-w-[325px] md:max-w-[623px] descripcion-v1 text-center max-lg:mx-auto lg:text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar quam eu quam varius facilisis. In dignissim nulla sagittis ex viverra consequat eu id quam. Sed vitae dolor ac elit condimentum elementum. </p>
+              <p class="max-w-[325px] md:max-w-[623px] descripcion-v1 text-center max-lg:mx-auto lg:text-start"  data-aos="fade-up" 
+              data-aos-duration="900" 
+              data-aos-once="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar quam eu quam varius facilisis. In dignissim nulla sagittis ex viverra consequat eu id quam. Sed vitae dolor ac elit condimentum elementum. </p>
           </div>
 
           <div>
-            <div class="grid grid-cols-1 lg:grid-cols-3 mt-[70px]  lg:mt-[108px] ">
+            <div class="grid grid-cols-1 lg:grid-cols-3 mt-[70px]  lg:mt-[108px] "  data-aos="fade-up" 
+            data-aos-duration="900" 
+            data-aos-once="true">
               <div class="flex flex-col gap-[28px] items-center justify-center w-full  lg:border-r border-dashed border-black ">
                 <div class="h-[50px] sm:h-[90px] w-[150px] sm:w-[210px]">
 
@@ -176,13 +174,13 @@
         </div>
       </section>
   </main>
-  <footer class="bg-footer">
-    <div class="max-w-[1440px] mx-auto pt-[60px] pb-[30px] flex flex-col gap-[0px] lg:gap-[30px] px-6">
-      <div class="logo max-lg:mb-[40px]">
+  <footer class="bg-footer" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+    <div class="max-w-[1440px] mx-auto pt-[60px] pb-[30px] flex flex-col gap-[0px] lg:gap-[30px] px-6" >
+      <div class="logo max-lg:mb-[40px]" >
         <img src="img/logoBlanco.svg" class="object-cover" alt="logo" />
       </div>
      
-      <div class="flex lg:flex-row flex-col items-center gap-[50px] xl:gap-[80px] 2xl:gap-[100px] w-full">
+      <div class="flex lg:flex-row flex-col items-center gap-[50px] xl:gap-[80px] 2xl:gap-[100px] w-full" >
         <div class="flex flex-col gap-6  text-[#ffffff] w-full lg:max-w-[420px]">
           <div class="flex items-start gap-4 w-full">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 14 18" fill="none">
@@ -276,11 +274,11 @@
         </div>
       </div>
     
-      <div class="flex flex-col max-md:gap-2 md:flex-row items-center justify-between text-[#ffffff] border-t border-[#1AA9E3]/20 pt-8 mt-10">
-        <div>
+      <div class="flex flex-col max-md:gap-2 md:flex-row items-center justify-between text-[#ffffff] border-t border-[#1AA9E3]/20 pt-8 mt-10" >
+        <div >
           <p class="text-[11px]"> <strong>Grupo CALA</strong><span> - ©2024 Todos lo derechos reservados.</span></p>
         </div>
-        <div class="flex items-center gap-2 text-[11px]">
+        <div class="flex items-center gap-2 text-[11px]" >
           <p>Made with 🧠</p>
           <svg xmlns="http://www.w3.org/2000/svg" width="67" height="15" viewBox="0 0 67 15" fill="none">
             <path
@@ -300,6 +298,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/main.js"></script>
 
 </body>

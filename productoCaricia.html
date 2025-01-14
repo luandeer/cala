@@ -10,7 +10,11 @@
 </head>
 
 <body>
-  <header class="w-full  fixed top-0 z-40 bg-[#1B58CD]  h-[90px] flex items-center">
+  <header class="w-full  fixed top-0 z-40 bg-[#1B58CD] h-[90px] flex items-center" data-aos="fade-down" 
+  data-aos-duration="900" 
+  data-aos-delay="400"
+  data-aos-easing="ease-out-sine"
+  data-aos-once="true">
     <nav class="w-full px-8 md:px-10  h-full flex items-center" >
       <div class="max-w-[1440px] mx-auto flex items-center justify-between  w-full">
         <a href="/">
@@ -22,68 +26,56 @@
           <a href="/noticias.html" class="menu__link">Noticias</a>
           <a href="/contacto.html" class="menu__link">Contacto</a>
           <div  class="">
-            <div class="unique-select-container relative w-full " data-name="paisWeb">
+            <div class="unique-select-container relative w-full" data-name="paisWeb">
               <button
-                class="unique-select-trigger font-inter text-white text-[12px] relative rounded-full  h-[35px]   min-w-[130px] max-w-[130px] w-full  flex items-center gap-0 bg-transparent border border-white  px-4 text-left focus:outline-none  "
+                class="unique-select-trigger font-inter text-white text-[12px] relative rounded-full h-[35px] min-w-[105px] max-w-[105px] w-full flex items-center gap-0 bg-transparent border border-white px-4 text-left focus:outline-none"
                 aria-haspopup="listbox"
                 aria-expanded="false"
               >
-                <span class="unique-select-display w-full flex items-center gap-1 font-semibold">Perú <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
-                  <rect width="20.5882" height="14" rx="1.64706" fill="#F10000" />
-                  <rect x="6.58813" width="7.41177" height="14" fill="white" />
-                </svg></span>
-                <span class="flex items-center   pointer-events-none w-fit">
+                <span class="unique-select-display w-full flex items-center gap-1.5 font-semibold">
+                  PER <img src="img/peru.svg" alt="Perú" class="w-4 h-4 ">
+                </span>
+                <span class="flex items-center pointer-events-none w-fit">
                   <img src="img/arrow.svg" class="w-max h-full rotate-90 object-cover" alt="">
                 </span>
               </button>
               <ul
-                class="unique-select-options absolute z-50 font-inter  text-[16px] mt-2 w-full bg-white  rounded-[12px] shadow-[0px_47px_13px_0px_rgba(94,_128,_158,_0.00),_0px_30px_12px_0px_rgba(94,_128,_158,_0.01),_0px_17px_10px_0px_rgba(94,_128,_158,_0.05),_0px_7px_7px_0px_rgba(94,_128,_158,_0.09),_0px_2px_4px_0px_rgba(94,_128,_158,_0.10)] hidden max-h-60 overflow-auto"
+                class="unique-select-options absolute z-50 font-inter text-[16px] mt-2 min-w-[130px] max-w-[130px] w-full bg-white rounded-[12px] shadow-[0px_47px_13px_0px_rgba(94,_128,_158,_0.00),_0px_30px_12px_0px_rgba(94,_128,_158,_0.01),_0px_17px_10px_0px_rgba(94,_128,_158,_0.05),_0px_7px_7px_0px_rgba(94,_128,_158,_0.09),_0px_2px_4px_0px_rgba(94,_128,_158,_0.10)] hidden max-h-60 overflow-auto"
                 role="listbox"
-              >
-                <li class="unique-select-option px-4 py-2 hover:bg-[#EEEEEE] cursor-pointer text-[14px] text-black flex items-center gap-1" data-value="opcion1">Colombia <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
-                  <rect width="20.5882" height="14" rx="1.64706" fill="#FFC700"/>
-                  <rect y="5.76477" width="20.5882" height="4.11765" fill="#003CD7"/>
-                  <path d="M0 9.88232H20.5882V12.3529C20.5882 13.2626 19.8508 14 18.9412 14H1.64706C0.737412 14 0 13.2626 0 12.3529V9.88232Z" fill="#F10000"/>
-                </svg></li>
-                <li class="unique-select-option px-4 py-2 hover:bg-[#EEEEEE] cursor-pointer text-[14px] flex items-center gap-1 text-black" data-value="opcion2">Perú <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
-                  <rect width="20.5882" height="14" rx="1.64706" fill="#F10000" />
-                  <rect x="6.58813" width="7.41177" height="14" fill="white" />
-                </svg></li>
-              </ul>
-              <input type="hidden" name="paisWeb" value="">
+              ></ul>
+              <input type="hidden" name="paisWeb" value="PER"> <!-- Valor predeterminado -->
             </div>
+            
+            
+            
+            
+            
           </div>
         </div>
         
         
         <div class="flex items-center gap-4 lg:hidden">
           <div class="w-full">
-            <div class="unique-select-container relative w-full " data-name="paisWeb">
+            <div class="unique-select-container relative w-full" data-name="paisWeb">
               <button
-                class="unique-select-trigger font-inter text-white text-[12px] relative rounded-full  h-[35px]   min-w-[110px] w-full  flex items-center gap-0 bg-transparent border border-white  px-4 text-left focus:outline-none  "
+                class="unique-select-trigger font-inter text-white text-[12px] relative rounded-full h-[35px] min-w-[105px] max-w-[105px] w-full flex items-center gap-0 bg-transparent border border-white px-4 text-left focus:outline-none"
                 aria-haspopup="listbox"
                 aria-expanded="false"
               >
-                <span class="unique-select-display w-full flex items-center gap-1 font-semibold">Perú <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
-                  <rect width="20.5882" height="14" rx="1.64706" fill="#F10000" />
-                  <rect x="6.58813" width="7.41177" height="14" fill="white" />
-                </svg></span>
-                <span class="flex items-center   pointer-events-none w-fit">
+                <span class="unique-select-display w-full flex items-center gap-1.5 font-semibold">
+                  PER <img src="img/peru.svg" alt="Perú" class="w-4 h-4 ">
+                </span>
+                <span class="flex items-center pointer-events-none w-fit">
                   <img src="img/arrow.svg" class="w-max h-full rotate-90 object-cover" alt="">
                 </span>
               </button>
               <ul
-                class="unique-select-options absolute z-50 font-inter  text-[16px] mt-2 w-full bg-white  rounded-[12px] shadow-[0px_47px_13px_0px_rgba(94,_128,_158,_0.00),_0px_30px_12px_0px_rgba(94,_128,_158,_0.01),_0px_17px_10px_0px_rgba(94,_128,_158,_0.05),_0px_7px_7px_0px_rgba(94,_128,_158,_0.09),_0px_2px_4px_0px_rgba(94,_128,_158,_0.10)] hidden max-h-60 overflow-auto"
+                class="unique-select-options absolute z-50 font-inter text-[16px] mt-2 min-w-[130px] max-w-[130px] w-full bg-white rounded-[12px] shadow-[0px_47px_13px_0px_rgba(94,_128,_158,_0.00),_0px_30px_12px_0px_rgba(94,_128,_158,_0.01),_0px_17px_10px_0px_rgba(94,_128,_158,_0.05),_0px_7px_7px_0px_rgba(94,_128,_158,_0.09),_0px_2px_4px_0px_rgba(94,_128,_158,_0.10)] hidden max-h-60 overflow-auto"
                 role="listbox"
-              >
-                <li class="unique-select-option px-4 py-2 hover:bg-[#EEEEEE] cursor-pointer text-[14px]" data-value="opcion1">Colombia</li>
-                <li class="unique-select-option px-4 py-2 hover:bg-[#EEEEEE] cursor-pointer text-[14px] flex items-center gap-1" data-value="opcion2">Perú <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
-                  <rect width="20.5882" height="14" rx="1.64706" fill="#F10000" />
-                  <rect x="6.58813" width="7.41177" height="14" fill="white" />
-                </svg></li>
-              </ul>
-              <input type="hidden" name="paisWeb" value="">
+              ></ul>
+              <input type="hidden" name="paisWeb" value="PER"> <!-- Valor predeterminado -->
             </div>
+            
           </div>
           <button id="menuButton" class="relative group flex items-center gap-6">
             
@@ -132,14 +124,39 @@
     <section class="fondoProducto mt-[80px]">
       <div class=" ">
 
-        <div class=" relative  h-screen">
-          <div class="hidden lg:block adornosProducto absolute inset-0">
+        <div class=" relative w-full h-screen overflow-hidden">
+         
+          <!-- <div class="absolute top-0 min-w-[150px] max-w-[200px] sm:max-w-[250px] md:max-w-[300px] -left-[calc(0%+8%)] lg:max-w-[400px]  sm:-left-[calc(0%+6%)] md:-left-[calc(0%+2%)]">
+            <img src="img/producto/Jabon-de-Lavar-Caricia.png" class="object-cover w-full h-full " alt="">
+            
+          </div>
+
+          <div class=" absolute -top-[calc(0px+3%)] md:-top-[calc(0px+5%)] left-1/2 transform  translate-x-[-50%] min-w-[100px] max-w-[200px] sm:max-w-[250px] md:max-w-[320px] lg:max-w-[400px] -right-[30px]">
+            <img src="img/producto/Suavizante-Sachet-Caricia.png" class=" object-cover  w-full h-full " alt="">
+          </div>
+
+          <div class="absolute -top-[6%] min-w-[150px] max-w-[200px] sm:max-w-[220px] md:max-w-[320px] lg:max-w-[400px]   -right-[calc(0%+12%)] md:-right-[calc(0%+10%)]">
+            <img src="img/producto/Detergente-En-Polvo-Caricia.png" class=" object-cover w-full h-full   " alt="">
 
           </div>
-          <div class="absolute inset-0  max-w-[532px] mx-auto top-1/2 transform -translate-y-[50%]">
-            <h4 class="text-center text-[28px] text-[#272727] font-normal mb-[16px]">Suave con una</h4>
-            <h2 class="titulo-h2 text-center mb-[40px] !text-[50px]">Caricia</h2>
-            <p class="text-center descripcion-v1 mb-[77px]">
+          <div class=" absolute top-[12%] min-w-[150px] max-w-[200px] sm:max-w-[250px] h-fit  lg:max-w-[400px]  -right-[calc(20px+10%)] md:-right-[calc(0%+11%)] sm:top-[14%]  md:top-[21%] lg:top-[30%]  md:max-w-[300px] ">
+            <img src="img/producto/Detergente-Liquido-Caricia.png" class="object-cover  w-full h-full " alt="">
+          </div>
+          
+          <div class="absolute top-20 min-w-[130px] h-fit max-w-[200px] sm:max-w-[250px]  lg:max-w-[400px]  -left-[calc(20px+8%)] sm:-left-[calc(0%+10%)] sm:top-[10%] md:top-[17%] md:max-w-[280px]">
+            <img src="img/producto/Suavizante_Caricia.png" class=" object-cover   w-full h-full  " alt="">
+
+          </div> -->
+        
+          
+          
+          <div class="  adornosProducto absolute inset-0">
+
+          </div>
+          <div class="absolute inset-0  max-w-[532px] mx-auto top-[45.5%] sm:top-[50%] md:top-[55%] transform -translate-y-[50%] px-6">
+            <h4 class="text-center text-[16px] md:text-[28px] text-[#272727] font-normal mb-[10px] md:mb-[16px]">Suave con una</h4>
+            <h2 class="titulo-h2 text-center mb-[40px] text-[30px] md:!text-[50px]">Caricia</h2>
+            <p class="text-center descripcion-v1 mb-[77px] max-md:max-w-full">
               Caricia sabe lo importante que es para ti el cuidado de los que más quieres. Por eso, te acompaña con una
               línea completa de productos diseñados con componentes formulados y dermatológicamente probados, que
               ayudarán a dejar tu ropa siempre limpia, suave y con exquisitos aromas.

@@ -1,4 +1,8 @@
-
+document.addEventListener("DOMContentLoaded", () => {
+  if (typeof AOS !== "undefined") {
+    AOS.init();
+  }
+});
 
 
 
@@ -364,45 +368,72 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener("DOMContentLoaded", () => {
   const selectContainers = document.querySelectorAll(".unique-select-container");
 
+  // JSON de países
+  const countries = [
+    {
+      "abreviatura": "PER",
+      "nombre": "Perú",
+      "img": "img/peru.svg"
+    },
+    {
+      "abreviatura": "COL",
+      "nombre": "Colombia",
+      "img": "img/colombia.svg"
+    },
+
+  ];
+
   selectContainers.forEach((container) => {
     const trigger = container.querySelector(".unique-select-trigger");
-    const options = container.querySelectorAll(".unique-select-option");
-    const menu = container.querySelector(".unique-select-options");
+    const optionsList = container.querySelector(".unique-select-options");
     const hiddenInput = container.querySelector("input[type='hidden']");
     const display = trigger.querySelector(".unique-select-display");
 
+    // Función para generar las opciones
+    const generateOptions = () => {
+      optionsList.innerHTML = ''; // Limpiar las opciones actuales
+      countries.forEach((country) => {
+        const option = document.createElement('li');
+        option.classList.add('unique-select-option', 'px-4', 'py-2', 'hover:bg-[#EEEEEE]', 'cursor-pointer', 'text-[14px]', 'text-black', 'flex', 'items-center', 'gap-1');
+        option.setAttribute('data-value', country.abreviatura);
+        option.innerHTML = `${country.nombre} <img src="${country.img}" alt="${country.nombre}" class="w-4 h-4 ml-2">`;
+        optionsList.appendChild(option);
+
+        // Agregar evento de selección
+        option.addEventListener("click", () => {
+          const selectedAbbr = country.abreviatura;
+          const selectedImg = country.img;
+          const selectedFullName = country.nombre;
+
+          // Actualiza la visualización del botón
+          display.innerHTML = `${selectedAbbr} <img src="${selectedImg}" alt="${selectedAbbr}" class="w-4 h-4 ">`;
+
+          // Establecer el valor oculto
+          hiddenInput.value = selectedAbbr;
+
+          // Cierra el menú
+          optionsList.classList.add("hidden");
+        });
+      });
+    };
+
+    // Inicializar el select con las opciones generadas
+    generateOptions();
+
     // Abre o cierra el menú al hacer clic en el botón
     trigger.addEventListener("click", () => {
-      menu.classList.toggle("hidden");
-    });
-
-    // Manejar selección de opciones
-    options.forEach((option) => {
-      option.addEventListener("click", () => {
-        const value = option.getAttribute("data-value");
-        const text = option.innerText;
-
-        // Eliminar la clase "selected" de todas las opciones
-        options.forEach(opt => opt.classList.remove("selected"));
-
-        // Agregar la clase "selected" a la opción seleccionada
-        option.classList.add("selected");
-
-        // Actualiza el texto mostrado y el valor oculto
-        display.innerText = text;
-        hiddenInput.value = value;
-
-        // Cierra el menú
-        menu.classList.add("hidden");
-      });
+      optionsList.classList.toggle("hidden");
     });
 
     // Cierra el menú al hacer clic fuera del contenedor
     document.addEventListener("click", (event) => {
       if (!container.contains(event.target)) {
-        menu.classList.add("hidden");
+        optionsList.classList.add("hidden");
       }
     });
   });
 });
+
+
+
 

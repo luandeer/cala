@@ -5,48 +5,85 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/output.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
   <title>CALA | Inicio</title>
 </head>
 
 <body>
   <main>
-    <section class=" h-screen  bannerIndex relative flex flex-col">
+    <section class="h-screen bannerIndex relative flex flex-col">
       <div class="absolute inset-0 degradadoBannerIndex"></div>
-      <div class="flex items-end justify-center relative z-20 pt-[20px] line-wrapper  w-[calc(100%-30px)] md:w-[calc(100%-100px)] lg:w-[calc(100%-340px)] mx-auto">
+    
+      <!-- Logo -->
+      <div class="flex items-end justify-center relative z-20 pt-[20px] line-wrapper w-[calc(100%-30px)] md:w-[calc(100%-100px)] lg:w-[calc(100%-340px)] mx-auto" 
+      data-aos="fade-down" 
+      data-aos-duration="800" 
+      data-aos-delay="100"
+      data-aos-easing="ease-out-sine"
+      data-aos-once="true">
         <img src="img/logo.svg" class="object-cover px-6" alt="">
       </div>
-
-      <div class="flex-1 max-md:mb-[71px] flex flex-col items-center justify-center relative  z-20">
-        <h1 class="text-white text-[30px] md:text-[60px] lg:text-[70px] font-bold leading-[74px] mb-[10px] md:mb-[50px] lg:mb-[70px]" style="text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-">Hola, seleciona tu país</h1>
+    
+      <!-- Título -->
+      <div class="flex-1 max-md:mb-[71px] flex flex-col items-center justify-center relative z-20">
+        <h1 class="text-white text-[30px] md:text-[60px] lg:text-[70px] font-bold leading-[74px] mb-[10px] md:mb-[50px] lg:mb-[70px]" 
+          style="text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);" 
+          data-aos="fade-up" 
+          data-aos-duration="1000" 
+          data-aos-once="true">
+          Hola, selecciona tu país
+        </h1>
+    
+        <!-- Botones -->
         <div class="flex items-center justify-center gap-[20px] lg:gap-[40px]">
           <a href="/home.html"
-            class="flex bg-white rounded-[50px] justify-center items-center gap-2 w-[130px] h-[50px] md:w-[200px] md:h-[70px] text-[14px] md:text-[18px] font-bold">Perú
+            class="flex bg-white rounded-[50px] justify-center items-center gap-2 w-[130px] h-[50px] md:w-[200px] md:h-[70px] text-[14px] md:text-[18px] font-bold hover:scale-105 hover:shadow-lg transition-transform duration-300"
+            data-aos="fade-up" 
+        data-aos-duration="1000" 
+        data-aos-once="true">
+            Perú
             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
               <rect width="20.5882" height="14" rx="1.64706" fill="#F10000" />
               <rect x="6.58813" width="7.41177" height="14" fill="white" />
-            </svg></a>
+            </svg>
+          </a>
+    
           <a href="/"
-            class="flex bg-white rounded-[50px] justify-center items-center gap-2 w-[130px] h-[50px] md:w-[200px] md:h-[70px] text-[14px] md:text-[18px] font-bold">Colombia
+            class="flex bg-white rounded-[50px] justify-center items-center gap-2 w-[130px] h-[50px] md:w-[200px] md:h-[70px] text-[14px] md:text-[18px] font-bold hover:scale-105 hover:shadow-lg transition-transform duration-300"
+            data-aos="fade-up" 
+        data-aos-duration="1000" 
+        data-aos-once="true">
+            Colombia
             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
               <rect width="20.5882" height="14" rx="1.64706" fill="#FFC700" />
               <rect y="5.76477" width="20.5882" height="4.11765" fill="#003CD7" />
-              <path
-                d="M0 9.8822H20.5882V12.3528C20.5882 13.2624 19.8508 13.9998 18.9412 13.9998H1.64706C0.737412 13.9998 0 13.2624 0 12.3528V9.8822Z"
-                fill="#F10000" />
-            </svg></a>
+              <path d="M0 9.8822H20.5882V12.3528C20.5882 13.2624 19.8508 13.9998 18.9412 13.9998H1.64706C0.737412 13.9998 0 13.2624 0 12.3528V9.8822Z" fill="#F10000" />
+            </svg>
+          </a>
         </div>
       </div>
-
-      <div class="relative z-20 w-[calc(100%-100px)] lg:w-[calc(100%-340px)] mx-auto hidden md:block">
+    
+      <!-- Footer -->
+      <div class="relative z-20 w-[calc(100%-100px)] lg:w-[calc(100%-340px)] mx-auto hidden md:block" 
+      data-aos="fade-in" 
+      data-aos-duration="1200"
+      data-aos-once="true">
         <hr class="h-[1px] bg-white w-full mt-20 mb-[30px] opacity-20">
-        <p class="text-white/40 text-center mb-[30px] text-[11px]"><span class="font-bold">Grupo CALA</span> - ©2024
-          Todos lo derechos reservados.</p>
+        <p class="text-white/40 text-center mb-[30px] text-[11px]">
+          <span class="font-bold">Grupo CALA</span> - ©2024 Todos los derechos reservados.
+        </p>
       </div>
     </section>
+    
 
   </main>
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+
+
 </body>
 
 </html>

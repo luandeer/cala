@@ -6,12 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/output.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
   <title>Home | Cala</title>
 </head>
 
 <body>
-  <header class="w-full  fixed top-0 z-40  h-[90px] flex items-center">
+  <header class="w-full  fixed top-0 z-40  h-[90px] flex items-center" data-aos="fade-down" 
+  data-aos-duration="900" 
+  data-aos-delay="400"
+  data-aos-easing="ease-out-sine"
+  data-aos-once="true">
     <nav class="w-full px-8 md:px-10  h-full flex items-center" id="nav">
       <div class="max-w-[1440px] mx-auto flex items-center justify-between  w-full">
         <a href="/">
@@ -23,68 +28,56 @@
           <a href="/noticias.html" class="menu__link">Noticias</a>
           <a href="/contacto.html" class="menu__link">Contacto</a>
           <div  class="">
-            <div class="unique-select-container relative w-full " data-name="paisWeb">
+            <div class="unique-select-container relative w-full" data-name="paisWeb">
               <button
-                class="unique-select-trigger font-inter text-white text-[12px] relative rounded-full  h-[35px]   min-w-[130px] max-w-[130px] w-full  flex items-center gap-0 bg-transparent border border-white  px-4 text-left focus:outline-none  "
+                class="unique-select-trigger font-inter text-white text-[12px] relative rounded-full h-[35px] min-w-[105px] max-w-[105px] w-full flex items-center gap-0 bg-transparent border border-white px-4 text-left focus:outline-none"
                 aria-haspopup="listbox"
                 aria-expanded="false"
               >
-                <span class="unique-select-display w-full flex items-center gap-1 font-semibold">Perú <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
-                  <rect width="20.5882" height="14" rx="1.64706" fill="#F10000" />
-                  <rect x="6.58813" width="7.41177" height="14" fill="white" />
-                </svg></span>
-                <span class="flex items-center   pointer-events-none w-fit">
+                <span class="unique-select-display w-full flex items-center gap-1.5 font-semibold">
+                  PER <img src="img/peru.svg" alt="Perú" class="w-4 h-4 ">
+                </span>
+                <span class="flex items-center pointer-events-none w-fit">
                   <img src="img/arrow.svg" class="w-max h-full rotate-90 object-cover" alt="">
                 </span>
               </button>
               <ul
-                class="unique-select-options absolute z-50 font-inter  text-[16px] mt-2 w-full bg-white  rounded-[12px] shadow-[0px_47px_13px_0px_rgba(94,_128,_158,_0.00),_0px_30px_12px_0px_rgba(94,_128,_158,_0.01),_0px_17px_10px_0px_rgba(94,_128,_158,_0.05),_0px_7px_7px_0px_rgba(94,_128,_158,_0.09),_0px_2px_4px_0px_rgba(94,_128,_158,_0.10)] hidden max-h-60 overflow-auto"
+                class="unique-select-options absolute z-50 font-inter text-[16px] mt-2 min-w-[130px] max-w-[130px] w-full bg-white rounded-[12px] shadow-[0px_47px_13px_0px_rgba(94,_128,_158,_0.00),_0px_30px_12px_0px_rgba(94,_128,_158,_0.01),_0px_17px_10px_0px_rgba(94,_128,_158,_0.05),_0px_7px_7px_0px_rgba(94,_128,_158,_0.09),_0px_2px_4px_0px_rgba(94,_128,_158,_0.10)] hidden max-h-60 overflow-auto"
                 role="listbox"
-              >
-                <li class="unique-select-option px-4 py-2 hover:bg-[#EEEEEE] cursor-pointer text-[14px] text-black flex items-center gap-1" data-value="opcion1">Colombia <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
-                  <rect width="20.5882" height="14" rx="1.64706" fill="#FFC700"/>
-                  <rect y="5.76477" width="20.5882" height="4.11765" fill="#003CD7"/>
-                  <path d="M0 9.88232H20.5882V12.3529C20.5882 13.2626 19.8508 14 18.9412 14H1.64706C0.737412 14 0 13.2626 0 12.3529V9.88232Z" fill="#F10000"/>
-                </svg></li>
-                <li class="unique-select-option px-4 py-2 hover:bg-[#EEEEEE] cursor-pointer text-[14px] flex items-center gap-1 text-black" data-value="opcion2">Perú <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
-                  <rect width="20.5882" height="14" rx="1.64706" fill="#F10000" />
-                  <rect x="6.58813" width="7.41177" height="14" fill="white" />
-                </svg></li>
-              </ul>
-              <input type="hidden" name="paisWeb" value="">
+              ></ul>
+              <input type="hidden" name="paisWeb" value="PER"> <!-- Valor predeterminado -->
             </div>
+            
+            
+            
+            
+            
           </div>
         </div>
         
         
         <div class="flex items-center gap-4 lg:hidden">
           <div class="w-full">
-            <div class="unique-select-container relative w-full " data-name="paisWeb">
+            <div class="unique-select-container relative w-full" data-name="paisWeb">
               <button
-                class="unique-select-trigger font-inter text-white text-[12px] relative rounded-full  h-[35px]   min-w-[110px] w-full  flex items-center gap-0 bg-transparent border border-white  px-4 text-left focus:outline-none  "
+                class="unique-select-trigger font-inter text-white text-[12px] relative rounded-full h-[35px] min-w-[105px] max-w-[105px] w-full flex items-center gap-0 bg-transparent border border-white px-4 text-left focus:outline-none"
                 aria-haspopup="listbox"
                 aria-expanded="false"
               >
-                <span class="unique-select-display w-full flex items-center gap-1 font-semibold">Perú <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
-                  <rect width="20.5882" height="14" rx="1.64706" fill="#F10000" />
-                  <rect x="6.58813" width="7.41177" height="14" fill="white" />
-                </svg></span>
-                <span class="flex items-center   pointer-events-none w-fit">
+                <span class="unique-select-display w-full flex items-center gap-1.5 font-semibold">
+                  PER <img src="img/peru.svg" alt="Perú" class="w-4 h-4 ">
+                </span>
+                <span class="flex items-center pointer-events-none w-fit">
                   <img src="img/arrow.svg" class="w-max h-full rotate-90 object-cover" alt="">
                 </span>
               </button>
               <ul
-                class="unique-select-options absolute z-50 font-inter  text-[16px] mt-2 w-full bg-white  rounded-[12px] shadow-[0px_47px_13px_0px_rgba(94,_128,_158,_0.00),_0px_30px_12px_0px_rgba(94,_128,_158,_0.01),_0px_17px_10px_0px_rgba(94,_128,_158,_0.05),_0px_7px_7px_0px_rgba(94,_128,_158,_0.09),_0px_2px_4px_0px_rgba(94,_128,_158,_0.10)] hidden max-h-60 overflow-auto"
+                class="unique-select-options absolute z-50 font-inter text-[16px] mt-2 min-w-[130px] max-w-[130px] w-full bg-white rounded-[12px] shadow-[0px_47px_13px_0px_rgba(94,_128,_158,_0.00),_0px_30px_12px_0px_rgba(94,_128,_158,_0.01),_0px_17px_10px_0px_rgba(94,_128,_158,_0.05),_0px_7px_7px_0px_rgba(94,_128,_158,_0.09),_0px_2px_4px_0px_rgba(94,_128,_158,_0.10)] hidden max-h-60 overflow-auto"
                 role="listbox"
-              >
-                <li class="unique-select-option px-4 py-2 hover:bg-[#EEEEEE] cursor-pointer text-[14px]" data-value="opcion1">Colombia</li>
-                <li class="unique-select-option px-4 py-2 hover:bg-[#EEEEEE] cursor-pointer text-[14px] flex items-center gap-1" data-value="opcion2">Perú <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
-                  <rect width="20.5882" height="14" rx="1.64706" fill="#F10000" />
-                  <rect x="6.58813" width="7.41177" height="14" fill="white" />
-                </svg></li>
-              </ul>
-              <input type="hidden" name="paisWeb" value="">
+              ></ul>
+              <input type="hidden" name="paisWeb" value="PER"> <!-- Valor predeterminado -->
             </div>
+            
           </div>
           <button id="menuButton" class="relative group flex items-center gap-6">
             
@@ -131,10 +124,15 @@
   </div>
   <main>
     <section class=" mb-20">
-      <div class=" w-full  relative  bannerHome  flex items-center">
+      <div class=" w-full  relative  bannerHome  flex items-center" data-aos="fade-down" data-aos-easing="ease-out-sine" 
+      data-aos-duration="800" 
+      data-aos-once="true">
         <div class="absolute inset-0 degradadoBannerHome"></div>
         <div class="max-w-[1440px] w-full  mx-auto lg:px-10">
-          <h1 class="lg:max-w-[670px] text-[#fff] text-[50px] max-w-[650px] lg:text-[70px] max-lg:mx-auto text-center lg:text-start font-bold relative z-20 leading-none">Cuida y disfruta de
+          <h1 class="lg:max-w-[670px] text-[#fff] text-[50px] max-w-[650px] lg:text-[70px] max-lg:mx-auto text-center lg:text-start font-bold relative z-20 leading-none" data-aos="fade-up" data-aos-easing="ease-out-sine" 
+          data-aos-duration="900"
+          data-aos-delay="600" 
+          data-aos-once="true">Cuida y disfruta de
             cada momento en familia</h1>
         </div>
       </div>
@@ -146,9 +144,15 @@
       <div class="lg:pl-[4%] xl:pl-[13%] w-full">
         <div class="flex flex-col lg:flex-row items-center gap-[70px] lg:gap-[100px] xl:gap-[200px]">
           <div class="flex flex-col items-start md:gap-6">
-            <span class="descripcion-v1 !text-[24px] max-md:!text-[14px] text-center lg:text-start max-lg:mx-auto">Te presentamos nuestra</span>
-            <h2 class="subtitulo lg:max-w-[429px] text-center lg:text-start max-md:!text-[30px]">familia de productos</h2>
-            <div class="hidden lg:flex items-center gap-[20px]   mt-4 self-end">
+            <span class="descripcion-v1 !text-[24px] max-md:!text-[14px] text-center lg:text-start max-lg:mx-auto" data-aos="fade-up" 
+            data-aos-duration="1000" 
+            data-aos-once="true">Te presentamos nuestra</span>
+            <h2 class="subtitulo lg:max-w-[429px] text-center lg:text-start max-md:!text-[30px]" data-aos="fade-up" 
+            data-aos-duration="1000" 
+            data-aos-once="true">familia de productos</h2>
+            <div class="hidden lg:flex items-center gap-[20px]   mt-4 self-end" data-aos="fade-up" 
+            data-aos-duration="1000" 
+            data-aos-once="true">
               <div class="custom-prev-productHome custom-swiper-button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="25" viewBox="0 0 22 25" fill="none">
                   <path d="M7.36249 19.79L2.11249 12.44M2.11249 12.44L7.36249 5.09001M2.11249 12.44L20.4875 12.44"
@@ -164,7 +168,9 @@
             </div>
           </div>
 
-          <div class="swiper carouselProductosHome products-div w-full">
+          <div class="swiper carouselProductosHome products-div w-full" data-aos="fade-up" 
+          data-aos-duration="1000" 
+          data-aos-once="true">
             <div class="swiper-wrapper ">
               <div class="swiper-slide  !h-[250px] md:!h-[400px] lg:!h-[350px] xl:!h-[400px] 2xl:!h-[600px]">
                 <a href="/productoCaricia.html">  <img src="img/home/productocariciaHome.png" class="object-cover mx-auto w-full h-full" alt=""></a>
@@ -197,7 +203,7 @@
           </div>
 
           <a href="#"
-           class="text-black flex lg:hidden   text-[14px] font-bold w-min  items-center h-[50px] px-[28px] whitespace-nowrap border border-black rounded-[40px]">
+           class="text-black flex lg:hidden   text-[14px] font-bold w-min  items-center h-[50px] px-[28px] whitespace-nowrap border border-black rounded-[40px]" >
            Todos las marcas
          </a>
         </div>
@@ -205,46 +211,69 @@
     </section>
     <section class="py-20">
       <div class="grid grid-cols-1 lg:grid-cols-2 items-center h-full lg:h-[700px]">
-        <div class="w-full aspect-video  h-full">
+        <!-- Imagen -->
+        <div class="w-full aspect-video h-full" 
+          data-aos="fade-right" 
+          data-aos-duration="900" 
+          data-aos-once="true">
           <img src="img/home/imagen1.png" class="object-cover w-full h-full object-top" alt="">
         </div>
-        <div class="w-full  bg-[#1AA9E3] py-16  h-full text-white flex items-center">
-           <div class="flex flex-col items-start justify-start md:items-center md:justify-center lg:items-start max-md:px-6 lg:justify-start  max-w-[514px] max-lg:mx-auto lg:ml-[15%] gap-6">
-            <h1 class="subtitulo !text-white text-start md:text-center lg:text-start">Grupo CALA</h1>
-           <p class="descripcion-v1 mb-[20px] lg:mb-[60px] !text-white text-start md:text-center lg:text-start">
-            CALA es un equipo dedicado a la innovación y la excelencia, comprometido con el cuidado. Nuestro empeño se centra en proporcionar bienestar a las familias peruanas, colaboradores, proveedores, inversores, consumidores y comunidades.
-           </p>
-           <a href="#"
-           class="text-white  text-[14px] font-bold w-min  flex items-center h-[50px] px-[28px] whitespace-nowrap border border-white rounded-[40px]">
-           Conoce más
-         </a>
-           </div>
+    
+        <!-- Contenido -->
+        <div class="w-full bg-[#1AA9E3] py-16 h-full text-white flex items-center">
+          <div class="flex flex-col items-start justify-start md:items-center md:justify-center lg:items-start max-md:px-6 lg:justify-start max-w-[514px] max-lg:mx-auto lg:ml-[15%] gap-6">
+            
+            <!-- Título -->
+            <h1 class="subtitulo !text-white text-start md:text-center lg:text-start" 
+              data-aos="fade-up" 
+              data-aos-duration="900" 
+              data-aos-once="true">
+              Grupo CALA
+            </h1>
+            
+            <!-- Descripción -->
+            <p class="descripcion-v1 mb-[20px] lg:mb-[60px] !text-white text-start md:text-center lg:text-start" 
+              data-aos="fade-up" 
+              data-aos-duration="900" 
+              data-aos-once="true">
+              CALA es un equipo dedicado a la innovación y la excelencia, comprometido con el cuidado. Nuestro empeño se centra en proporcionar bienestar a las familias peruanas, colaboradores, proveedores, inversores, consumidores y comunidades.
+            </p>
+            
+            <!-- Botón -->
+            <a href="#"
+              class="text-white text-[14px] font-bold w-min flex items-center h-[50px] px-[28px] whitespace-nowrap border border-white rounded-[40px] hover:scale-105 hover:shadow-lg transition-transform duration-200"
+              data-aos="zoom-in" 
+              data-aos-duration="900" 
+              data-aos-once="true">
+              Conoce más
+            </a>
+          </div>
         </div>
       </div>
     </section>
+    
     <section class="pb-20">
       <div class="container max-w-[1440px]">
         <div class="flex max-md:px-6 flex-col lg:flex-row items-start max-w-[1150px] mx-auto lg:h-[450px]">
-          <div class="space-y-[20px] md:space-y-[35px]  max-lg:mx-auto">
-            <h1 class="subtitulo max-lg:!text-[50px] !leading-tight text-start md:text-center lg:text-start lg:max-w-[570px] max-md:!text-[30px]">Responsabilidad
-              social</h1>
+          <div class="space-y-[20px] md:space-y-[35px] max-lg:mx-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+            <h1 class="subtitulo max-lg:!text-[50px] !leading-tight text-start md:text-center lg:text-start lg:max-w-[570px] max-md:!text-[30px]">
+              Responsabilidad social
+            </h1>
             <p class="descripcion-v1 !max-w-[454px] md:mx-auto lg:mx-0 lg:max-w-[375px] text-start md:text-center lg:text-start">
-              En Cala, nuestra responsabilidad social va más allá de los productos que creamos. Nos preocupamos por las
-              comunidades a las que servimos y estamos comprometidos con iniciativas que marcan la diferencia. Descubre
-              cómo estamos trabajando para un mundo más limpio, seguro y justo para todos.
+              En Cala, nuestra responsabilidad social va más allá de los productos que creamos. Nos preocupamos por las comunidades a las que servimos y estamos comprometidos con iniciativas que marcan la diferencia. Descubre cómo estamos trabajando para un mundo más limpio, seguro y justo para todos.
             </p>
           </div>
-          <div class=" lg:max-w-[572px]   max-w-full max-lg:mx-auto  lg:h-fit  lg:self-end lg:-mb-10">
-            <img src="img/responsabilidad/mundo.png" class="object-cover h-full w-full " alt="">
+          <div class="lg:max-w-[572px] max-w-full max-lg:mx-auto lg:h-fit lg:self-end lg:-mb-10" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+            <img src="img/responsabilidad/mundo.png" class="object-cover h-full w-full" alt="">
           </div>
-         
         </div>
       </div>
     </section>
+    
     <section class="py-20 bg-[#1AA9E3]/15">
       <div class="lg:pl-[4%] xl:pl-[13%] w-full">
         <div class="flex flex-col lg:flex-row items-center lg:gap-[100px] xl:gap-[150px]">
-          <div class="flex flex-col items-start gap-2 w-full max-w-[320px]">
+          <div class="flex flex-col items-start gap-2 w-full max-w-[320px]" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
             <h2 class="titulo-h2 !text-[30px] md:!text-[40px] lg:!text-start max-lg:mx-auto !text-center ">Últimas noticias</h2>
             <span class="descripcion-v1  lg:!text-start !text-start md:!text-center">Descubre la noticias más importantes de la industria</span>
             <div class="hidden lg:flex items-center gap-[20px]   mt-6 self-start">
@@ -263,7 +292,7 @@
             </div>
           </div>
 
-          <div class="hidden lg:block w-full overflow-hidden">
+          <div class="hidden lg:block w-full overflow-hidden" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
             <div class=" swiper carouselNoticiasHome noticiasHome w-full">
               <div class="swiper-wrapper ">
                 <div class="swiper-slide   ">
@@ -359,7 +388,7 @@
       </div>
     </section>
   </main>
-  <footer class="bg-footer">
+  <footer class="bg-footer" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
     <div class="max-w-[1440px] mx-auto pt-[60px] pb-[30px] flex flex-col gap-[0px] lg:gap-[30px] px-6">
       <div class="logo max-lg:mb-[40px]">
         <img src="img/logoBlanco.svg" class="object-cover" alt="logo" />
@@ -484,7 +513,7 @@
     </div>
   </footer>
 
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
