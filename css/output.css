@@ -710,8 +710,8 @@ video {
   left: -1rem;
 }
 
-.-left-\[5\%\]{
-  left: -5%;
+.-left-\[12\%\]{
+  left: -12%;
 }
 
 .-left-\[calc\(0\%\+8\%\)\]{
@@ -734,12 +734,12 @@ video {
   right: -6rem;
 }
 
-.-right-\[30px\]{
-  right: -30px;
+.-right-\[12\%\]{
+  right: -12%;
 }
 
-.-right-\[5\%\]{
-  right: -5%;
+.-right-\[30px\]{
+  right: -30px;
 }
 
 .-top-1{
@@ -860,26 +860,6 @@ video {
 
 .top-6{
   top: 1.5rem;
-}
-
-.-right-\[8\%\]{
-  right: -8%;
-}
-
-.-left-\[10\%\]{
-  left: -10%;
-}
-
-.-right-\[10\%\]{
-  right: -10%;
-}
-
-.-left-\[12\%\]{
-  left: -12%;
-}
-
-.-right-\[12\%\]{
-  right: -12%;
 }
 
 .\!z-20{
@@ -1157,6 +1137,18 @@ video {
 
 .mt-auto{
   margin-top: auto;
+}
+
+.-mt-\[30\%\]{
+  margin-top: -30%;
+}
+
+.-mt-\[40\%\]{
+  margin-top: -40%;
+}
+
+.-mt-\[35\%\]{
+  margin-top: -35%;
 }
 
 .\!block{
@@ -3812,6 +3804,10 @@ button:active {
 
   .sm\:-right-\[6\%\]{
     right: -6%;
+  }
+
+  .sm\:-mt-\[25\%\]{
+    margin-top: -25%;
   }
 
   .sm\:h-\[450px\]{
