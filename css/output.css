@@ -710,8 +710,8 @@ video {
   left: -1rem;
 }
 
-.-left-\[12\%\]{
-  left: -12%;
+.-left-\[14\%\]{
+  left: -14%;
 }
 
 .-left-\[calc\(0\%\+8\%\)\]{
@@ -734,8 +734,8 @@ video {
   right: -6rem;
 }
 
-.-right-\[12\%\]{
-  right: -12%;
+.-right-\[14\%\]{
+  right: -14%;
 }
 
 .-right-\[30px\]{
@@ -860,34 +860,6 @@ video {
 
 .top-6{
   top: 1.5rem;
-}
-
-.-right-\[8\%\]{
-  right: -8%;
-}
-
-.-right-\[6\%\]{
-  right: -6%;
-}
-
-.-right-\[3\%\]{
-  right: -3%;
-}
-
-.-left-\[3\%\]{
-  left: -3%;
-}
-
-.-right-\[14\%\]{
-  right: -14%;
-}
-
-.-left-\[14\%\]{
-  left: -14%;
-}
-
-.-left-\[16\%\]{
-  left: -16%;
 }
 
 .-right-\[16\%\]{
