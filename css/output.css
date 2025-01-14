@@ -838,6 +838,90 @@ video {
   top: 45.5%;
 }
 
+.top-\[16\%\]{
+  top: 16%;
+}
+
+.top-\[48\%\]{
+  top: 48%;
+}
+
+.top-\[50\%\]{
+  top: 50%;
+}
+
+.-left-\[calc\(20px\+10\%\)\]{
+  left: calc(calc(20px + 10%) * -1);
+}
+
+.top-\[14\%\]{
+  top: 14%;
+}
+
+.\!bottom-0{
+  bottom: 0px !important;
+}
+
+.-bottom-10{
+  bottom: -2.5rem;
+}
+
+.-bottom-20{
+  bottom: -5rem;
+}
+
+.-left-20{
+  left: -5rem;
+}
+
+.-right-20{
+  right: -5rem;
+}
+
+.-left-32{
+  left: -8rem;
+}
+
+.-left-28{
+  left: -7rem;
+}
+
+.-left-24{
+  left: -6rem;
+}
+
+.-top-\[12\%\]{
+  top: -12%;
+}
+
+.-right-24{
+  right: -6rem;
+}
+
+.-top-\[calc\(0px\+20\%\)\]{
+  top: calc(calc(0px + 20%) * -1);
+}
+
+.-top-\[calc\(0px\+12\%\)\]{
+  top: calc(calc(0px + 12%) * -1);
+}
+
+.-right-\[2\%\]{
+  right: -2%;
+}
+
+.-right-\[4\%\]{
+  right: -4%;
+}
+
+.-right-\[5\%\]{
+  right: -5%;
+}
+
+.-left-\[5\%\]{
+  left: -5%;
+}
+
 .\!z-20{
   z-index: 20 !important;
 }
@@ -1111,6 +1195,18 @@ video {
   margin-top: auto;
 }
 
+.-mt-\[20\%\]{
+  margin-top: -20%;
+}
+
+.-mt-\[30\%\]{
+  margin-top: -30%;
+}
+
+.-mt-\[25\%\]{
+  margin-top: -25%;
+}
+
 .\!block{
   display: block !important;
 }
@@ -1250,6 +1346,10 @@ video {
 
 .h-screen{
   height: 100vh;
+}
+
+.h-\[500px\]{
+  height: 500px;
 }
 
 .max-h-60{
@@ -1471,6 +1571,10 @@ video {
 
 .max-w-md{
   max-width: 28rem;
+}
+
+.max-w-\[180px\]{
+  max-width: 180px;
 }
 
 .flex-1{
@@ -2313,6 +2417,10 @@ video {
 
 .pt-\[60px\]{
   padding-top: 60px;
+}
+
+.pb-10{
+  padding-bottom: 2.5rem;
 }
 
 .text-left{
@@ -3771,8 +3879,44 @@ button:active {
     top: 50%;
   }
 
+  .sm\:-left-\[calc\(0\%\+8\%\)\]{
+    left: calc(calc(0% + 8%) * -1);
+  }
+
+  .sm\:-right-\[calc\(0\%\+8\%\)\]{
+    right: calc(calc(0% + 8%) * -1);
+  }
+
+  .sm\:-left-\[2\%\]{
+    left: -2%;
+  }
+
+  .sm\:-right-\[2\%\]{
+    right: -2%;
+  }
+
+  .sm\:-left-\[6\%\]{
+    left: -6%;
+  }
+
+  .sm\:-right-\[6\%\]{
+    right: -6%;
+  }
+
   .sm\:h-\[90px\]{
     height: 90px;
+  }
+
+  .sm\:h-\[450px\]{
+    height: 450px;
+  }
+
+  .sm\:h-\[400px\]{
+    height: 400px;
+  }
+
+  .sm\:h-\[500px\]{
+    height: 500px;
   }
 
   .sm\:w-\[210px\]{
@@ -3789,6 +3933,10 @@ button:active {
 
   .sm\:max-w-\[60px\]{
     max-width: 60px;
+  }
+
+  .sm\:max-w-\[300px\]{
+    max-width: 300px;
   }
 
   .sm\:text-\[16px\]{
@@ -3823,6 +3971,38 @@ button:active {
 
   .md\:top-\[55\%\]{
     top: 55%;
+  }
+
+  .md\:-top-\[calc\(0px\+10\%\)\]{
+    top: calc(calc(0px + 10%) * -1);
+  }
+
+  .md\:-top-\[calc\(0px\+12\%\)\]{
+    top: calc(calc(0px + 12%) * -1);
+  }
+
+  .md\:-top-\[calc\(0px\+14\%\)\]{
+    top: calc(calc(0px + 14%) * -1);
+  }
+
+  .md\:-left-20{
+    left: -5rem;
+  }
+
+  .md\:-top-\[14\%\]{
+    top: -14%;
+  }
+
+  .md\:-left-\[calc\(0\%\+10\%\)\]{
+    left: calc(calc(0% + 10%) * -1);
+  }
+
+  .md\:-left-\[6\%\]{
+    left: -6%;
+  }
+
+  .md\:-right-\[6\%\]{
+    right: -6%;
   }
 
   .md\:mx-auto{
@@ -3888,6 +4068,18 @@ button:active {
 
   .md\:h-\[70px\]{
     height: 70px;
+  }
+
+  .md\:h-\[450px\]{
+    height: 450px;
+  }
+
+  .md\:h-\[550px\]{
+    height: 550px;
+  }
+
+  .md\:h-\[500px\]{
+    height: 500px;
   }
 
   .md\:w-\[200px\]{
@@ -4090,6 +4282,74 @@ button:active {
     top: 30%;
   }
 
+  .lg\:left-0{
+    left: 0px;
+  }
+
+  .lg\:bottom-0{
+    bottom: 0px;
+  }
+
+  .lg\:\!bottom-0{
+    bottom: 0px !important;
+  }
+
+  .lg\:-left-32{
+    left: -8rem;
+  }
+
+  .lg\:-left-28{
+    left: -7rem;
+  }
+
+  .lg\:-left-24{
+    left: -6rem;
+  }
+
+  .lg\:-top-\[calc\(0px\+10\%\)\]{
+    top: calc(calc(0px + 10%) * -1);
+  }
+
+  .lg\:-top-\[calc\(0px\+16\%\)\]{
+    top: calc(calc(0px + 16%) * -1);
+  }
+
+  .lg\:-top-\[calc\(0px\+12\%\)\]{
+    top: calc(calc(0px + 12%) * -1);
+  }
+
+  .lg\:-top-\[calc\(0px\+14\%\)\]{
+    top: calc(calc(0px + 14%) * -1);
+  }
+
+  .lg\:-right-16{
+    right: -4rem;
+  }
+
+  .lg\:-top-\[16\%\]{
+    top: -16%;
+  }
+
+  .lg\:-bottom-20{
+    bottom: -5rem;
+  }
+
+  .lg\:-right-\[12\%\]{
+    right: -12%;
+  }
+
+  .lg\:-right-\[4\%\]{
+    right: -4%;
+  }
+
+  .lg\:-right-\[8\%\]{
+    right: -8%;
+  }
+
+  .lg\:-left-\[8\%\]{
+    left: -8%;
+  }
+
   .lg\:mx-0{
     margin-left: 0px;
     margin-right: 0px;
@@ -4164,6 +4424,18 @@ button:active {
     height: fit-content;
   }
 
+  .lg\:h-\[800px\]{
+    height: 800px;
+  }
+
+  .lg\:h-\[600px\]{
+    height: 600px;
+  }
+
+  .lg\:h-\[550px\]{
+    height: 550px;
+  }
+
   .lg\:w-1\/2{
     width: 50%;
   }
@@ -4222,6 +4494,10 @@ button:active {
 
   .lg\:max-w-\[670px\]{
     max-width: 670px;
+  }
+
+  .lg\:max-w-\[500px\]{
+    max-width: 500px;
   }
 
   .lg\:grid-cols-2{
@@ -4303,12 +4579,180 @@ button:active {
 }
 
 @media (min-width: 1280px){
+  .xl\:-top-\[calc\(100\%-5\%\)\]{
+    top: calc(calc(100% - 5%) * -1);
+  }
+
+  .xl\:-top-\[calc\(0\%-5\%\)\]{
+    top: calc(calc(0% - 5%) * -1);
+  }
+
+  .xl\:-top-\[calc\(0\%-20\%\)\]{
+    top: calc(calc(0% - 20%) * -1);
+  }
+
+  .xl\:-top-\[calc\(0\%\+20\%\)\]{
+    top: calc(calc(0% + 20%) * -1);
+  }
+
+  .xl\:-top-\[calc\(0\%\+10\%\)\]{
+    top: calc(calc(0% + 10%) * -1);
+  }
+
+  .xl\:-top-\[calc\(0\%\+8\%\)\]{
+    top: calc(calc(0% + 8%) * -1);
+  }
+
+  .xl\:-top-\[calc\(0\%\+6\%\)\]{
+    top: calc(calc(0% + 6%) * -1);
+  }
+
+  .xl\:-top-\[calc\(0\%\+12\%\)\]{
+    top: calc(calc(0% + 12%) * -1);
+  }
+
+  .xl\:right-0{
+    right: 0px;
+  }
+
+  .xl\:-top-\[calc\(0\%\+16\%\)\]{
+    top: calc(calc(0% + 16%) * -1);
+  }
+
+  .xl\:-top-\[4\%\]{
+    top: -4%;
+  }
+
+  .xl\:-top-\[10\%\]{
+    top: -10%;
+  }
+
+  .xl\:-top-\[12\%\]{
+    top: -12%;
+  }
+
+  .xl\:-top-\[16\%\]{
+    top: -16%;
+  }
+
+  .xl\:-top-\[20\%\]{
+    top: -20%;
+  }
+
+  .xl\:left-0{
+    left: 0px;
+  }
+
+  .xl\:top-\[20\%\]{
+    top: 20%;
+  }
+
+  .xl\:top-\[30\%\]{
+    top: 30%;
+  }
+
+  .xl\:top-\[25\%\]{
+    top: 25%;
+  }
+
+  .xl\:top-\[22\%\]{
+    top: 22%;
+  }
+
+  .xl\:-left-\[5\%\]{
+    left: -5%;
+  }
+
+  .xl\:-right-\[5\%\]{
+    right: -5%;
+  }
+
+  .xl\:-right-\[10\%\]{
+    right: -10%;
+  }
+
+  .xl\:-top-\[25\%\]{
+    top: -25%;
+  }
+
+  .xl\:-top-\[30\%\]{
+    top: -30%;
+  }
+
+  .xl\:bottom-0{
+    bottom: 0px;
+  }
+
+  .xl\:\!bottom-0{
+    bottom: 0px !important;
+  }
+
+  .xl\:-top-10{
+    top: -2.5rem;
+  }
+
+  .xl\:-left-10{
+    left: -2.5rem;
+  }
+
+  .xl\:-left-20{
+    left: -5rem;
+  }
+
+  .xl\:-right-\[20px\]{
+    right: -20px;
+  }
+
+  .xl\:-right-20{
+    right: -5rem;
+  }
+
+  .xl\:-right-10{
+    right: -2.5rem;
+  }
+
+  .xl\:-right-\[15\%\]{
+    right: -15%;
+  }
+
+  .xl\:-right-\[12\%\]{
+    right: -12%;
+  }
+
+  .xl\:left-\[3\%\]{
+    left: 3%;
+  }
+
+  .xl\:-left-\[10\%\]{
+    left: -10%;
+  }
+
   .xl\:ml-\[calc\(0\%\+8\%\)\]{
     margin-left: calc(0% + 8%);
   }
 
   .xl\:\!h-\[400px\]{
     height: 400px !important;
+  }
+
+  .xl\:h-\[800px\]{
+    height: 800px;
+  }
+
+  .xl\:h-\[900px\]{
+    height: 900px;
+  }
+
+  .xl\:max-w-\[500px\]{
+    max-width: 500px;
+  }
+
+  .xl\:max-w-\[550px\]{
+    max-width: 550px;
+  }
+
+  .xl\:max-w-\[600px\]{
+    max-width: 600px;
   }
 
   .xl\:gap-\[150px\]{
@@ -4333,6 +4777,46 @@ button:active {
 }
 
 @media (min-width: 1536px){
+  .\32xl\:-top-\[30\%\]{
+    top: -30%;
+  }
+
+  .\32xl\:top-\[20\%\]{
+    top: 20%;
+  }
+
+  .\32xl\:top-\[0\%\]{
+    top: 0%;
+  }
+
+  .\32xl\:-top-\[10\%\]{
+    top: -10%;
+  }
+
+  .\32xl\:-top-\[15\%\]{
+    top: -15%;
+  }
+
+  .\32xl\:-top-\[18\%\]{
+    top: -18%;
+  }
+
+  .\32xl\:left-0{
+    left: 0px;
+  }
+
+  .\32xl\:right-0{
+    right: 0px;
+  }
+
+  .\32xl\:-right-\[10\%\]{
+    right: -10%;
+  }
+
+  .\32xl\:-left-\[5\%\]{
+    left: -5%;
+  }
+
   .\32xl\:ml-\[calc\(0\%\+21\%\)\]{
     margin-left: calc(0% + 21%);
   }
