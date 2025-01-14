@@ -734,8 +734,8 @@ video {
   right: -6rem;
 }
 
-.-right-\[14\%\]{
-  right: -14%;
+.-right-\[16\%\]{
+  right: -16%;
 }
 
 .-right-\[30px\]{
@@ -860,10 +860,6 @@ video {
 
 .top-6{
   top: 1.5rem;
-}
-
-.-right-\[16\%\]{
-  right: -16%;
 }
 
 .\!z-20{
@@ -2352,6 +2348,10 @@ video {
 
 .pt-\[60px\]{
   padding-top: 60px;
+}
+
+.pt-\[80px\]{
+  padding-top: 80px;
 }
 
 .text-left{
