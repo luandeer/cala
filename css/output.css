@@ -959,8 +959,8 @@ video {
   margin-bottom: -5rem;
 }
 
-.-mt-\[25\%\]{
-  margin-top: -25%;
+.-mt-\[35\%\]{
+  margin-top: -35%;
 }
 
 .mb-1{
@@ -1139,18 +1139,6 @@ video {
   margin-top: auto;
 }
 
-.-mt-\[30\%\]{
-  margin-top: -30%;
-}
-
-.-mt-\[40\%\]{
-  margin-top: -40%;
-}
-
-.-mt-\[35\%\]{
-  margin-top: -35%;
-}
-
 .\!block{
   display: block !important;
 }
@@ -1290,6 +1278,10 @@ video {
 
 .h-screen{
   height: 100vh;
+}
+
+.h-\[280px\]{
+  height: 280px;
 }
 
 .max-h-60{
